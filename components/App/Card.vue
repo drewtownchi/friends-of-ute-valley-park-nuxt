@@ -5,6 +5,7 @@
       sizes="600"
       alt=""
       :img-attrs="{class: 'absolute inset-0 -z-10 h-full w-full object-cover'}"
+      loading="lazy"
     />
     <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
     <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />

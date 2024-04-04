@@ -25,6 +25,7 @@
                   src="/img/logos/leave-no-trace.jpg"
                   alt="Leave No Trace logo"
                   width="192"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -44,6 +45,7 @@
                     sizes="360"
                     class="rounded-lg object-cover shadow-lg"
                     :alt="principle.altText"
+                    loading="lazy"
                   />
                 </div>
                 <div class="text-lg font-medium leading-6">
