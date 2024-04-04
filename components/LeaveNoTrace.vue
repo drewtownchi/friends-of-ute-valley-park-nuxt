@@ -25,6 +25,7 @@
                   src="/img/logos/leave-no-trace.jpg"
                   alt="Leave No Trace logo"
                   width="192"
+                  height="100"
                   loading="lazy"
                 />
               </a>
