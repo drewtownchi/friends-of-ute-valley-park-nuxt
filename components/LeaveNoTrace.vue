@@ -13,8 +13,7 @@
             Please read and always obey the
             <a
               href="/rules/"
-              class="inline-block font-bold text-green-800 underline"
-            > rules</a>
+              class="inline-block font-bold text-green-800 underline"> rules</a>
             of Ute Valley Park.
           </p>
           <div class="mt-8 sm:flex">
@@ -26,8 +25,7 @@
                   alt="Leave No Trace logo"
                   width="192"
                   height="100"
-                  loading="lazy"
-                />
+                  loading="lazy" />
               </a>
             </div>
           </div>
@@ -36,8 +34,7 @@
           <ul class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8">
             <li
               v-for="principle in principles"
-              :key="principle.name"
-            >
+              :key="principle.name">
               <div class="space-y-4">
                 <div class="aspect-h-2 aspect-w-3">
                   <NuxtPicture
@@ -47,8 +44,7 @@
                     sizes="180 md:360"
                     class="rounded-lg object-cover shadow-lg"
                     :alt="principle.altText"
-                    loading="lazy"
-                  />
+                    loading="lazy" />
                 </div>
                 <div class="text-lg font-medium leading-6">
                   <h3 class="text-green-700">
@@ -58,8 +54,7 @@
                 <div class="text-lg">
                   <p
                     class="text-gray-600"
-                    v-html="principle.text"
-                  />
+                    v-html="principle.text" />
                 </div>
               </div>
             </li>

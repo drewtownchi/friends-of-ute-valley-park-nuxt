@@ -2,8 +2,7 @@
   <div class="relative isolate">
     <svg
       class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
-      aria-hidden="true"
-    >
+      aria-hidden="true">
       <defs>
         <pattern
           id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84"
@@ -11,42 +10,35 @@
           height="200"
           x="50%"
           y="-1"
-          patternUnits="userSpaceOnUse"
-        >
+          patternUnits="userSpaceOnUse">
           <path
             d="M.5 200V.5H200"
-            fill="none"
-          />
+            fill="none" />
         </pattern>
       </defs>
       <svg
         x="50%"
         y="-1"
-        class="overflow-visible fill-gray-50"
-      >
+        class="overflow-visible fill-gray-50">
         <path
           d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
-          stroke-width="0"
-        />
+          stroke-width="0" />
       </svg>
       <rect
         width="100%"
         height="100%"
         stroke-width="0"
-        fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"
-      />
+        fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" />
     </svg>
     <div class="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48">
       <svg
         viewBox="0 0 801 1036"
         aria-hidden="true"
-        class="w-[50.0625rem]"
-      >
+        class="w-[50.0625rem]">
         <path
           fill="url(#70656b7e-db44-4b9b-b7d2-1f06791bed52)"
           fill-opacity=".3"
-          d="m282.279 843.371 32.285 192.609-313.61-25.32 281.325-167.289-58.145-346.888c94.5 92.652 277.002 213.246 251.009-45.597C442.651 127.331 248.072 10.369 449.268.891c160.956-7.583 301.235 116.434 351.256 179.39L507.001 307.557l270.983 241.04-495.705 294.774Z"
-        />
+          d="m282.279 843.371 32.285 192.609-313.61-25.32 281.325-167.289-58.145-346.888c94.5 92.652 277.002 213.246 251.009-45.597C442.651 127.331 248.072 10.369 449.268.891c160.956-7.583 301.235 116.434 351.256 179.39L507.001 307.557l270.983 241.04-495.705 294.774Z" />
         <defs>
           <linearGradient
             id="70656b7e-db44-4b9b-b7d2-1f06791bed52"
@@ -54,13 +46,11 @@
             x2="-28.677"
             y1="-116.221"
             y2="1091.63"
-            gradientUnits="userSpaceOnUse"
-          >
+            gradientUnits="userSpaceOnUse">
             <stop stop-color="#14532d" />
             <stop
               offset="1"
-              stop-color="#4ade80"
-            />
+              stop-color="#4ade80" />
           </linearGradient>
         </defs>
       </svg>
@@ -71,20 +61,17 @@
           <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
             <div class="group relative inline-flex">
               <div
-                class="transitiona-all animate-tilt absolute -inset-px rounded-xl bg-gradient-to-r from-[#6be6e0] via-[#31e721] to-[#1c8f02] opacity-40 blur-lg duration-1000 group-hover:-inset-1 group-hover:opacity-70 group-hover:duration-200"
-              />
+                class="transitiona-all animate-tilt absolute -inset-px rounded-xl bg-gradient-to-r from-[#6be6e0] via-[#31e721] to-[#1c8f02] opacity-40 blur-lg duration-1000 group-hover:-inset-1 group-hover:opacity-70 group-hover:duration-200" />
 
               <a
                 href="/visit/"
-                class="relative inline-flex items-center rounded-full bg-slate-800 p-1 pr-2 text-lg font-bold text-white transition-all duration-200 hover:text-gray-200 sm:text-base lg:text-sm xl:text-base"
-              >
+                class="relative inline-flex items-center rounded-full bg-slate-800 p-1 pr-2 text-lg font-bold text-white transition-all duration-200 hover:text-gray-200 sm:text-base lg:text-sm xl:text-base">
                 <span class="rounded-full bg-gradient-to-r from-teal-500 to-green-600 px-3 py-0.5 text-sm font-semibold leading-5 text-white">Visit Ute Valley Park</span>
                 <span class="ml-4 text-sm">Find out more</span>
                 <Icon
                   name="heroicons:chevron-right"
                   class="ml-2 h-5 w-5 text-gray-500"
-                  aria-hidden="true"
-                />
+                  aria-hidden="true" />
               </a>
             </div>
             <h2 class="mt-4 text-7xl font-bold tracking-tight">
@@ -94,8 +81,7 @@
             <p class="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
               <a
                 href="/about/"
-                class="text-green-700 underline decoration-green-500 decoration-[0.25rem] hover:decoration-green-500/50 hover:decoration-[0.5rem] focus:decoration-green-500/50 focus:decoration-[0.5rem] motion-safe:transition-all motion-safe:duration-200"
-              >Friends of Ute Valley Park</a> is an officially recognized “Friends” organization by the City of Colorado Springs Parks, Recreation, and Cultural Services Department. Our mission is to maintain, preserve, and provide
+                class="text-green-700 underline decoration-green-500 decoration-[0.25rem] hover:decoration-green-500/50 hover:decoration-[0.5rem] focus:decoration-green-500/50 focus:decoration-[0.5rem] motion-safe:transition-all motion-safe:duration-200">Friends of Ute Valley Park</a> is an officially recognized “Friends” organization by the City of Colorado Springs Parks, Recreation, and Cultural Services Department. Our mission is to maintain, preserve, and provide
               education for Ute Valley Park.
             </p>
           </div>
@@ -103,8 +89,7 @@
             <div class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
               <div
                 class="relative"
-                transition:name="hero"
-              >
+                transition:name="hero">
                 <NuxtPicture
                   src="/img/heroes/ute-valley-park-hero.jpg"
                   width="300"
@@ -112,8 +97,7 @@
                   sizes="150 md:300"
                   quality="60"
                   alt=""
-                  :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}"
-                />
+                  :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}" />
                 <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
               </div>
             </div>
@@ -126,8 +110,7 @@
                   sizes="150 md:300"
                   quality="60"
                   alt=""
-                  :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}"
-                />
+                  :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}" />
                 <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
               </div>
               <div class="relative">
@@ -138,8 +121,7 @@
                   sizes="150 md:300"
                   quality="60"
                   alt=""
-                  :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}"
-                />
+                  :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}" />
                 <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
               </div>
             </div>
@@ -152,8 +134,7 @@
                   sizes="150 md:300"
                   quality="60"
                   alt=""
-                  :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}"
-                />
+                  :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}" />
                 <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
               </div>
               <div class="relative">
@@ -164,8 +145,7 @@
                   sizes="150 md:300"
                   quality="60"
                   alt=""
-                  :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}"
-                />
+                  :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}" />
                 <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
               </div>
             </div>
@@ -182,22 +162,19 @@
         <svg
           viewBox="0 0 1024 1024"
           class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
-          aria-hidden="true"
-        >
+          aria-hidden="true">
           <circle
             cx="512"
             cy="512"
             r="512"
             fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
-            fill-opacity="0.7"
-          />
+            fill-opacity="0.7" />
           <defs>
             <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
               <stop stop-color="#7775D6" />
               <stop
                 offset="1"
-                stop-color="#E935C1"
-              />
+                stop-color="#E935C1" />
             </radialGradient>
           </defs>
         </svg>
@@ -211,12 +188,10 @@
           <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
             <a
               href="/donate/"
-              class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            >Donate</a>
+              class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Donate</a>
             <a
               href="/volunteer/"
-              class="text-sm font-semibold leading-6 text-white"
-            >Volunteer<span aria-hidden="true">→</span></a>
+              class="text-sm font-semibold leading-6 text-white">Volunteer<span aria-hidden="true">→</span></a>
           </div>
         </div>
         <div class="relative mt-16 h-80 lg:mt-8">
@@ -227,8 +202,7 @@
             quality="60"
             alt="Volunteers working on a fence"
             width="900"
-            height="540"
-          />
+            height="540" />
         </div>
       </div>
     </div>
@@ -269,8 +243,7 @@
           v-for="(post, id) in newsItems"
           :key="id"
           :post="post"
-          :can-be-wide="false"
-        />
+          :can-be-wide="false" />
       </div>
     </div>
   </div>

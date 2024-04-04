@@ -4,12 +4,10 @@
     <div v-if="status === 'idle' || status === 'error'">
       <form
         class="mt-3 sm:flex"
-        @submit="submit"
-      >
+        @submit="submit">
         <label
           for="name"
-          class="sr-only"
-        >Name</label>
+          class="sr-only">Name</label>
         <input
           id="name"
           v-model="payload.name"
@@ -20,12 +18,10 @@
           }"
           class="mr-4 block w-full rounded-md border-gray-300 py-3 text-base placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500 sm:flex-1"
           placeholder="Full name"
-          @blur="validate"
-        >
+          @blur="validate">
         <label
           for="email"
-          class="sr-only"
-        >Email</label>
+          class="sr-only">Email</label>
         <input
           id="email"
           v-model="payload.email"
@@ -36,27 +32,23 @@
           }"
           class="mt-3 block w-full rounded-md border-gray-300 py-3 text-base placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500 sm:mt-0 sm:flex-1"
           placeholder="Email"
-          @blur="validate"
-        >
+          @blur="validate">
         <button
           :disabled="status === 'pending'"
           type="submit"
-          class="mt-3 w-full rounded-md border border-transparent bg-green-700 px-6 py-3 text-base font-medium text-green-50 shadow-sm hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 disabled:bg-green-600 sm:ml-3 sm:mt-0 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center"
-        >
+          class="mt-3 w-full rounded-md border border-transparent bg-green-700 px-6 py-3 text-base font-medium text-green-50 shadow-sm hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 disabled:bg-green-600 sm:ml-3 sm:mt-0 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center">
           <span>
             <Icon
               v-if="status === 'pending'"
               name="i-mdi-loading"
-              class="-ml-2 mr-2 h-6 w-6 animate-spin text-white"
-            />
+              class="-ml-2 mr-2 h-6 w-6 animate-spin text-white" />
           </span>
           Notify me
         </button>
       </form>
       <p
         v-if="nameValidationError || emailValidationError"
-        class="mt-2 text-sm text-red-600"
-      >
+        class="mt-2 text-sm text-red-600">
         {{ nameValidationError }}
         {{ emailValidationError }}
       </p>
@@ -64,8 +56,7 @@
         We care about your data. Read our
         <a
           href="/privacy/"
-          class="font-medium text-gray-900 underline"
-        > Privacy Policy</a>.
+          class="font-medium text-gray-900 underline"> Privacy Policy</a>.
       </p>
     </div>
     <div v-if="status === 'success'">
@@ -75,8 +66,7 @@
     </div>
     <div
       v-if="error"
-      class="mt-2 text-sm text-red-600"
-    >
+      class="mt-2 text-sm text-red-600">
       <h2 class="text-3xl font-medium">
         Submit Error
       </h2>

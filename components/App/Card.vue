@@ -7,21 +7,18 @@
       width="362"
       alt=""
       :img-attrs="{class: 'absolute inset-0 -z-10 h-full w-full object-cover'}"
-      loading="lazy"
-    />
+      loading="lazy" />
     <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
     <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
 
     <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
       <time
         datetime="{{publishedOn.toString()}}"
-        class="mr-8"
-      >{{ new Intl.DateTimeFormat('en-US').format(new Date(post.publishedOn)) }}</time>
+        class="mr-8">{{ new Intl.DateTimeFormat('en-US').format(new Date(post.publishedOn)) }}</time>
     </div>
     <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
       <NuxtLink
-        :to="post._path"
-      >
+        :to="post._path">
         <span class="absolute inset-0" />
         {{ post.title }}
       </NuxtLink>

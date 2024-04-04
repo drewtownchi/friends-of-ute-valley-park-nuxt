@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindTypography from '@tailwindcss/typography'
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
@@ -11,5 +13,10 @@ export default defineNuxtConfig({
   ],
   image: {
     format: ['avif', 'webp'],
+  },
+  tailwindcss: {
+    config: {
+      plugins: [tailwindTypography]
+    }
   }
 })

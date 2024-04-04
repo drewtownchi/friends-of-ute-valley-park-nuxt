@@ -2,8 +2,7 @@
   <div>
     <a
       href="#main-content"
-      class="sr-only bg-white text-black underline focus:not-sr-only"
-    >Skip to main content</a>
+      class="sr-only bg-white text-black underline focus:not-sr-only">Skip to main content</a>
     <div class="min-h-screen bg-white">
       <VolunteerBanner />
       <AppHeader />
