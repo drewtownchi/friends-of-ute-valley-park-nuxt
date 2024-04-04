@@ -13,6 +13,7 @@
               width="56"
               height="56"
               src="img/logos/logo-full.jpg"
+              sizes="28"
               alt="Friends of Ute Valley Park"
             />
           </div>
