@@ -227,6 +227,7 @@
             quality="60"
             alt="Volunteers working on a fence"
             width="900"
+            height="540"
           />
         </div>
       </div>
