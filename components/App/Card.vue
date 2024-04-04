@@ -2,7 +2,9 @@
   <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
     <NuxtPicture
       :src="post.coverImage"
-      sizes="300"
+      sizes="300 md:600"
+      height="436"
+      width="362"
       alt=""
       :img-attrs="{class: 'absolute inset-0 -z-10 h-full w-full object-cover'}"
       loading="lazy"

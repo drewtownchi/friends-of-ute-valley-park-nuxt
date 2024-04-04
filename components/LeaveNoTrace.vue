@@ -42,7 +42,8 @@
                   <NuxtPicture
                     :src="principle.image"
                     width="360"
-                    sizes="360"
+                    height="240"
+                    sizes="180 md:360"
                     class="rounded-lg object-cover shadow-lg"
                     :alt="principle.altText"
                     loading="lazy"
