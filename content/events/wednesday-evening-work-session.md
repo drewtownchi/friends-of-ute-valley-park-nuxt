@@ -1,6 +1,6 @@
 ---
 title: Wednesday Evening Work Session
-date: 2025-04-22T03:23:04.676Z
+date: 2021-04-22T03:23:04.676Z
 description: 3rd Wednesday Work Session 5:30-7:30pm
 meetingLocation:
   predefinedLocation: 4
