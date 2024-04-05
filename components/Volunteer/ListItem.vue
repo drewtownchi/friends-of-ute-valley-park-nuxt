@@ -2,8 +2,10 @@
   <li class="my-5 flex flex-wrap items-center justify-between gap-x-6 gap-y-4 py-5 sm:flex-nowrap">
     <div>
       <p class="text-sm font-semibold leading-6 text-green-800">
-        <a :href="'/events/' + volunteerEvent.slug"
-           class="hover:underline">{{ volunteerEvent.title }}</a>
+        <NuxtLink :href="volunteerEvent._path"
+                  class="hover:underline">
+          {{ volunteerEvent.title }}
+        </NuxtLink>
       </p>
       <div class="mt-1 flex items-center gap-x-2 text-xs leading-5 text-gray-500">
         <p>

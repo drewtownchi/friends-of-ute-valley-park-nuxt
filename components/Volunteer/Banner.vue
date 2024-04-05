@@ -24,10 +24,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
-interface Event {
-  date: Date;
-}
-
 const { data: events } = await useAsyncData('home', () => queryContent('events').where({date: {$gt: new Date()}}).find())
 
 const hasUpcomingVolunteerEvent = computed(() => {

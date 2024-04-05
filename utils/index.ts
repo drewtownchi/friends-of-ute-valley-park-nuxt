@@ -1,10 +1,10 @@
 import type { VolunteerEvent, MeetingLocation } from '~/types'
 
-export function meetingLocationParser(volunteerEventFrontmatter: VolunteerEvent, meetingLocations: MeetingLocation[]) {
-    if (volunteerEventFrontmatter.meetingLocation.predefinedLocation !== -1) {
-        const location = meetingLocations.find((loc) => loc.id === volunteerEventFrontmatter.meetingLocation.predefinedLocation);
+export function meetingLocationParser(volunteerEvent: VolunteerEvent, meetingLocations: MeetingLocation[]) {
+    if (volunteerEvent.meetingLocation.predefinedLocation !== -1) {
+        const location = meetingLocations.find((loc) => loc.id === volunteerEvent.meetingLocation.predefinedLocation);
         if (!location) {
-            throw new Error(`Meeting location with id ${volunteerEventFrontmatter.meetingLocation.predefinedLocation} not found`);
+            throw new Error(`Meeting location with id ${volunteerEvent.meetingLocation.predefinedLocation} not found`);
         }
         return {
             name: location.name,
@@ -12,7 +12,7 @@ export function meetingLocationParser(volunteerEventFrontmatter: VolunteerEvent,
         };
     }
     return {
-        name: volunteerEventFrontmatter.meetingLocation.alternativeLocation,
-        directionsLink: volunteerEventFrontmatter.meetingLocation.alternativeLocationDirectionsLink,
+        name: volunteerEvent.meetingLocation.alternativeLocation,
+        directionsLink: volunteerEvent.meetingLocation.alternativeLocationDirectionsLink,
     };
 }

@@ -18,5 +18,12 @@ export default defineNuxtConfig({
     config: {
       plugins: [tailwindTypography]
     }
+  },
+  experimental: {
+    defaults: {
+      nuxtLink: {
+        trailingSlash: 'append'
+      }
+    }
   }
 })
