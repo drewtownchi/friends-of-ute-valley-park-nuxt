@@ -2,6 +2,7 @@
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "explicit"
     },
+    "tailwindCSS.experimental.classRegex": ["tw`(.*?)`", "tw\\('(.*?)'\\)"],
     "files.associations": {
       "*.css": "tailwindcss"
   },
