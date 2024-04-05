@@ -184,6 +184,7 @@
                 alt="dog in park in front of mountains"
                 width="600"
                 height="400"
+                sizes="200px md:400px"
                 class="rounded-lg object-cover object-center shadow-lg" />
             </div>
           </div>
@@ -243,6 +244,7 @@
                 alt="Biker in the air at sunset"
                 width="800"
                 height="600"
+                sizes="220px md:440px"
                 class="rounded-lg object-cover object-center shadow-lg" />
             </div>
           </div>
@@ -291,6 +293,7 @@
               alt="arch at ute valley park"
               width="800"
               height="600"
+              sizes="220px md:440px"
               class="rounded-lg object-cover object-center shadow-lg" />
           </div>
         </div>
