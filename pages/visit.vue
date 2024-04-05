@@ -6,16 +6,14 @@
         <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-50" />
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div class="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
-            <div
-              class="absolute inset-0"
-              transition:name="hero">
-              <NuxtPicture
-                src="img/visit/ute-valley-park-biker.jpg"
-                alt=""
-                width="988"
-                height="692"
-                sizes="250px sm:350px md:1100px"
-                :img-attrs="{class: 'h-full w-full object-cover transition-all'}" />
+            <div class="absolute inset-0"
+                 transition:name="hero">
+              <NuxtPicture src="img/visit/ute-valley-park-biker.jpg"
+                           alt=""
+                           width="988"
+                           height="692"
+                           sizes="250px sm:350px md:1100px"
+                           :img-attrs="{class: 'h-full w-full object-cover transition-all'}" />
               <div class="absolute inset-0 bg-gradient-to-r from-green-700 to-teal-600 mix-blend-multiply" />
             </div>
             <div class="relative px-4 py-32 sm:px-6 sm:py-48 lg:px-8 lg:py-64">
@@ -41,42 +39,36 @@
             Ute Valley Park is nestled between Centennial Blvd, Vindicator Dr and I-25 in Colorado Springs with 5 convenient parking locations.
           </p>
           <ul class="my-10">
-            <li
-              v-for="trailhead in sortedTrailheads"
-              :key="trailhead.id"
-              class="relative focus-within:ring-2 focus-within:ring-green-500"
-              :class="{'mt-6': trailhead.id !== 1}">
+            <li v-for="trailhead in sortedTrailheads"
+                :key="trailhead.id"
+                class="relative focus-within:ring-2 focus-within:ring-green-500"
+                :class="{'mt-6': trailhead.id !== 1}">
               <div class="flex items-center px-4 py-4 hover:bg-gray-100 sm:px-6">
                 <div class="flex min-w-0 flex-1 items-center">
                   <div class="flex-shrink-0">
                     <div class="flex h-12 w-12 items-center justify-center rounded-md bg-green-500 text-white">
-                      <svg
-                        class="h-6 w-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <svg class="h-6 w-6"
+                           fill="none"
+                           stroke="currentColor"
+                           viewBox="0 0 24 24"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
                     </div>
                   </div>
                   <div class="ml-4">
                     <h5 class="text-lg font-semibold text-green-800 hover:underline">
-                      <NuxtLink
-                        class="block focus:outline-none"
-                        :to="trailhead._path">
-                        <span
-                          class="absolute inset-0"
-                          aria-hidden="true" />
+                      <NuxtLink class="block focus:outline-none"
+                                :to="trailhead._path">
+                        <span class="absolute inset-0"
+                              aria-hidden="true" />
                         {{ trailhead.name }}
                       </NuxtLink>
                     </h5>
@@ -85,16 +77,14 @@
                     </p>
                   </div>
                 </div>
-                <svg
-                  class="h-8 w-8 text-green-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true">
-                  <path
-                    fill-rule="evenodd"
-                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                    clip-rule="evenodd" />
+                <svg class="h-8 w-8 text-green-500"
+                     xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 20 20"
+                     fill="currentColor"
+                     aria-hidden="true">
+                  <path fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd" />
                 </svg>
               </div>
             </li>
@@ -103,25 +93,21 @@
 
         <div class="sm:mx-auto sm:max-w-3xl sm:px-6">
           <div class="py-12 sm:isolate sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <div
-              class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(40%-30rem)]"
-              aria-hidden="true">
-              <div
-                class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-green-200 to-teal-200 opacity-90 sm:left-[calc(0%+36rem)] sm:w-[72.1875rem]"
-                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
+            <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(40%-30rem)]"
+                 aria-hidden="true">
+              <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-green-200 to-teal-200 opacity-90 sm:left-[calc(0%+36rem)] sm:w-[72.1875rem]"
+                   style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
             </div>
             <div class="relative sm:mx-auto sm:max-w-3xl sm:px-0 lg:-mr-10 lg:h-full lg:max-w-none lg:pl-12">
-              <a
-                href="/images/maps/ute-valley-park-map-full.jpg"
-                target="_blank">
-                <NuxtPicture
-                  src="img/maps/ute-valley-park-map-full.jpg"
-                  alt="Map of Ute Valley Park"
-                  width="568"
-                  height="460"
-                  sizes="300px md:600"
-                  loading="lazy"
-                  :img-attrs="{class: 'mx-auto w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-96 lg:w-auto lg:max-w-none'}" />
+              <a href="/images/maps/ute-valley-park-map-full.jpg"
+                 target="_blank">
+                <NuxtPicture src="img/maps/ute-valley-park-map-full.jpg"
+                             alt="Map of Ute Valley Park"
+                             width="568"
+                             height="460"
+                             sizes="300px md:600"
+                             loading="lazy"
+                             :img-attrs="{class: 'mx-auto w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-96 lg:w-auto lg:max-w-none'}" />
                 <p class="mx-auto mt-1 w-1/2 text-center text-sm text-gray-700">Click to open fullsize map</p>
               </a>
             </div>
@@ -130,33 +116,29 @@
       </div>
       <LeaveNoTrace />
       <!-- Rules -->
-      <svg
-        class="absolute right-full hidden translate-x-1/2 translate-y-12 transform lg:block"
-        width="404"
-        height="784"
-        fill="none"
-        viewBox="0 0 404 784">
+      <svg class="absolute right-full hidden translate-x-1/2 translate-y-12 transform lg:block"
+           width="404"
+           height="784"
+           fill="none"
+           viewBox="0 0 404 784">
         <defs>
-          <pattern
-            id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
-            x="0"
-            y="0"
-            width="20"
-            height="20"
-            patternUnits="userSpaceOnUse">
-            <rect
-              x="0"
-              y="0"
-              width="4"
-              height="4"
-              class="text-gray-200"
-              fill="currentColor" />
+          <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
+                   x="0"
+                   y="0"
+                   width="20"
+                   height="20"
+                   patternUnits="userSpaceOnUse">
+            <rect x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  class="text-gray-200"
+                  fill="currentColor" />
           </pattern>
         </defs>
-        <rect
-          width="404"
-          height="784"
-          fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
+        <rect width="404"
+              height="784"
+              fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
       </svg>
 
       <div class="relative mx-auto max-w-7xl bg-gray-50 px-4 py-8 sm:px-6 lg:px-8">
@@ -171,23 +153,21 @@
         <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
           <div class="mt-8 text-xl lg:mt-0">
             For the safety and comfort of all visitors please read the
-            <NuxtLink
-              to="/rules/"
-              class="font-semibold text-green-600 no-underline">
+            <NuxtLink to="/rules/"
+                      class="font-semibold text-green-600 no-underline">
               rules
             </NuxtLink>
             the city of Colorado Springs enforces for all city parks and open spaces.
           </div>
           <div class="relative mx-auto max-w-prose text-base lg:max-w-none">
             <div class="aspect-h-7 aspect-w-12 relative mt-8 lg:aspect-none lg:mt-0 lg:px-16">
-              <NuxtPicture
-                src="img/visit/dog.jpg"
-                alt="dog in park in front of mountains"
-                width="600"
-                height="400"
-                sizes="200px md:400px"
-                loading="lazy"
-                class="rounded-lg object-cover object-center shadow-lg" />
+              <NuxtPicture src="img/visit/dog.jpg"
+                           alt="dog in park in front of mountains"
+                           width="600"
+                           height="400"
+                           sizes="200px md:400px"
+                           loading="lazy"
+                           class="rounded-lg object-cover object-center shadow-lg" />
             </div>
           </div>
         </div>
@@ -205,24 +185,21 @@
             </h4>
 
             <ul class="mt-10">
-              <li
-                v-for="(activity, i) in activities"
-                :key="activity.name"
-                :class="{['mt-10']: i !== 0}">
+              <li v-for="(activity, i) in activities"
+                  :key="activity.name"
+                  :class="{['mt-10']: i !== 0}">
                 <div class="flex">
                   <div class="flex-shrink-0">
                     <div class="flex h-12 w-12 items-center justify-center rounded-md bg-green-500 text-white">
-                      <svg
-                        class="h-6 w-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          stroke-Linecap="round"
-                          stroke-Linejoin="round"
-                          stroke-Width="2"
-                          d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                      <svg class="h-6 w-6"
+                           fill="none"
+                           stroke="currentColor"
+                           viewBox="0 0 24 24"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-Linecap="round"
+                              stroke-Linejoin="round"
+                              stroke-Width="2"
+                              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                       </svg>
                     </div>
                   </div>
@@ -241,14 +218,13 @@
 
           <div class="relative mx-auto max-w-prose text-base lg:max-w-none">
             <div class="aspect-h-7 aspect-w-12 relative mt-8 lg:aspect-none lg:mt-0 lg:h-96 lg:px-16">
-              <NuxtPicture
-                src="img/visit/activities.jpg"
-                alt="Biker in the air at sunset"
-                width="800"
-                height="600"
-                sizes="220px md:440px"
-                loading="lazy"
-                class="rounded-lg object-cover object-center shadow-lg" />
+              <NuxtPicture src="img/visit/activities.jpg"
+                           alt="Biker in the air at sunset"
+                           width="800"
+                           height="600"
+                           sizes="220px md:440px"
+                           loading="lazy"
+                           class="rounded-lg object-cover object-center shadow-lg" />
             </div>
           </div>
         </div>
@@ -291,14 +267,13 @@
         </div>
         <div class="relative mx-auto max-w-prose text-base lg:max-w-none">
           <div class="aspect-h-7 aspect-w-12 relative mt-8 lg:aspect-none lg:mt-0 lg:h-96 lg:px-16">
-            <NuxtPicture
-              src="img/visit/ute-valley-park-arch.jpg"
-              alt="arch at ute valley park"
-              width="800"
-              height="600"
-              sizes="220px md:440px"
-              loading="lazy"
-              class="rounded-lg object-cover object-center shadow-lg" />
+            <NuxtPicture src="img/visit/ute-valley-park-arch.jpg"
+                         alt="arch at ute valley park"
+                         width="800"
+                         height="600"
+                         sizes="220px md:440px"
+                         loading="lazy"
+                         class="rounded-lg object-cover object-center shadow-lg" />
           </div>
         </div>
       </div>

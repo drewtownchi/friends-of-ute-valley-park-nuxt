@@ -1,13 +1,11 @@
 <template>
   <div class="mx-auto max-w-screen-xl space-y-8 overflow-hidden px-4 py-12 sm:px-6 lg:px-8">
     <nav class="-mx-5 -my-2 flex flex-wrap justify-center">
-      <div
-        v-for="item in footerItems"
-        :key="item.name"
-        class="px-5 py-2">
-        <a
-          :href="item.link"
-          class="text-base text-gray-500 hover:text-green-800 hover:underline focus:text-green-800 focus:underline focus:outline-none">
+      <div v-for="item in footerItems"
+           :key="item.name"
+           class="px-5 py-2">
+        <a :href="item.link"
+           class="text-base text-gray-500 hover:text-green-800 hover:underline focus:text-green-800 focus:underline focus:outline-none">
           {{ item.name }}
         </a>
       </div>

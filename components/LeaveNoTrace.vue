@@ -11,40 +11,36 @@
           </p>
           <p class="mt-3 max-w-3xl text-lg text-green-700">
             Please read and always obey the
-            <a
-              href="/rules/"
-              class="inline-block font-bold text-green-800 underline"> rules</a>
+            <a href="/rules/"
+               class="inline-block font-bold text-green-800 underline"> rules</a>
             of Ute Valley Park.
           </p>
           <div class="mt-8 sm:flex">
             <div class="mx-auto w-64 rounded-md bg-white p-8 shadow focus-within:ring-2 focus-within:ring-green-100">
               <a href="https://www.lnt.org">
-                <NuxtPicture
-                  class="h-auto w-64"
-                  src="/img/logos/leave-no-trace.jpg"
-                  alt="Leave No Trace logo"
-                  width="192"
-                  height="100"
-                  loading="lazy" />
+                <NuxtPicture class="h-auto w-64"
+                             src="/img/logos/leave-no-trace.jpg"
+                             alt="Leave No Trace logo"
+                             width="192"
+                             height="100"
+                             loading="lazy" />
               </a>
             </div>
           </div>
         </div>
         <div class="lg:col-span-2">
           <ul class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8">
-            <li
-              v-for="principle in principles"
-              :key="principle.name">
+            <li v-for="principle in principles"
+                :key="principle.name">
               <div class="space-y-4">
                 <div class="aspect-h-2 aspect-w-3">
-                  <NuxtPicture
-                    :src="principle.image"
-                    width="360"
-                    height="240"
-                    sizes="180 md:360"
-                    class="rounded-lg object-cover shadow-lg"
-                    :alt="principle.altText"
-                    loading="lazy" />
+                  <NuxtPicture :src="principle.image"
+                               width="360"
+                               height="240"
+                               sizes="180 md:360"
+                               class="rounded-lg object-cover shadow-lg"
+                               :alt="principle.altText"
+                               loading="lazy" />
                 </div>
                 <div class="text-lg font-medium leading-6">
                   <h3 class="text-green-700">
@@ -52,9 +48,8 @@
                   </h3>
                 </div>
                 <div class="text-lg">
-                  <p
-                    class="text-gray-600"
-                    v-html="principle.text" />
+                  <p class="text-gray-600"
+                     v-html="principle.text" />
                 </div>
               </div>
             </li>
