@@ -1,5 +1,4 @@
 <template>
-  {{ status }}
   <div class="sm:text-center lg:mx-0 lg:text-left">
     <div v-if="status === 'idle' || status === 'error'">
       <form

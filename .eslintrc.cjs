@@ -11,7 +11,11 @@ module.exports = {
               "multiline": "never",
             }
           }
-        ]
+        ],
+        "vue/first-attribute-linebreak": ["error", {
+          "multiline": "beside"
+        }]
       }
+      
     
   }

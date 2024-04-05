@@ -1,254 +1,256 @@
 <template>
-  <div class="relative isolate">
-    <svg
-      class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
-      aria-hidden="true">
-      <defs>
-        <pattern
-          id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84"
-          width="200"
-          height="200"
+  <div>
+    <div class="relative isolate">
+      <svg
+        class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
+        aria-hidden="true">
+        <defs>
+          <pattern
+            id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84"
+            width="200"
+            height="200"
+            x="50%"
+            y="-1"
+            patternUnits="userSpaceOnUse">
+            <path
+              d="M.5 200V.5H200"
+              fill="none" />
+          </pattern>
+        </defs>
+        <svg
           x="50%"
           y="-1"
-          patternUnits="userSpaceOnUse">
+          class="overflow-visible fill-gray-50">
           <path
-            d="M.5 200V.5H200"
-            fill="none" />
-        </pattern>
-      </defs>
-      <svg
-        x="50%"
-        y="-1"
-        class="overflow-visible fill-gray-50">
-        <path
-          d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
-          stroke-width="0" />
+            d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+            stroke-width="0" />
+        </svg>
+        <rect
+          width="100%"
+          height="100%"
+          stroke-width="0"
+          fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" />
       </svg>
-      <rect
-        width="100%"
-        height="100%"
-        stroke-width="0"
-        fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" />
-    </svg>
-    <div class="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48">
-      <svg
-        viewBox="0 0 801 1036"
-        aria-hidden="true"
-        class="w-[50.0625rem]">
-        <path
-          fill="url(#70656b7e-db44-4b9b-b7d2-1f06791bed52)"
-          fill-opacity=".3"
-          d="m282.279 843.371 32.285 192.609-313.61-25.32 281.325-167.289-58.145-346.888c94.5 92.652 277.002 213.246 251.009-45.597C442.651 127.331 248.072 10.369 449.268.891c160.956-7.583 301.235 116.434 351.256 179.39L507.001 307.557l270.983 241.04-495.705 294.774Z" />
-        <defs>
-          <linearGradient
-            id="70656b7e-db44-4b9b-b7d2-1f06791bed52"
-            x1="508.179"
-            x2="-28.677"
-            y1="-116.221"
-            y2="1091.63"
-            gradientUnits="userSpaceOnUse">
-            <stop stop-color="#14532d" />
-            <stop
-              offset="1"
-              stop-color="#4ade80" />
-          </linearGradient>
-        </defs>
-      </svg>
-    </div>
-    <div class="overflow-hidden">
-      <div class="mx-auto max-w-7xl px-6 pb-24 pt-36 sm:pt-60 lg:px-8 lg:pt-24">
-        <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-          <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-            <div class="group relative inline-flex">
-              <div
-                class="transitiona-all animate-tilt absolute -inset-px rounded-xl bg-gradient-to-r from-[#6be6e0] via-[#31e721] to-[#1c8f02] opacity-40 blur-lg duration-1000 group-hover:-inset-1 group-hover:opacity-70 group-hover:duration-200" />
-
-              <a
-                href="/visit/"
-                class="relative inline-flex items-center rounded-full bg-slate-800 p-1 pr-2 text-lg font-bold text-white transition-all duration-200 hover:text-gray-200 sm:text-base lg:text-sm xl:text-base">
-                <span class="rounded-full bg-gradient-to-r from-teal-500 to-green-600 px-3 py-0.5 text-sm font-semibold leading-5 text-white">Visit Ute Valley Park</span>
-                <span class="ml-4 text-sm">Find out more</span>
-                <Icon
-                  name="heroicons:chevron-right"
-                  class="ml-2 h-5 w-5 text-gray-500"
-                  aria-hidden="true" />
-              </a>
-            </div>
-            <h2 class="mt-4 text-7xl font-bold tracking-tight">
-              <span class="inline text-gray-900">Friends of</span>
-              <span class="inline text-green-600"> Ute Valley Park</span>
-            </h2>
-            <p class="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-              <a
-                href="/about/"
-                class="text-green-700 underline decoration-green-500 decoration-[0.25rem] hover:decoration-green-500/50 hover:decoration-[0.5rem] focus:decoration-green-500/50 focus:decoration-[0.5rem] motion-safe:transition-all motion-safe:duration-200">Friends of Ute Valley Park</a> is an officially recognized “Friends” organization by the City of Colorado Springs Parks, Recreation, and Cultural Services Department. Our mission is to maintain, preserve, and provide
-              education for Ute Valley Park.
-            </p>
-          </div>
-          <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
-            <div class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
-              <div
-                class="relative"
-                transition:name="hero">
-                <NuxtPicture
-                  src="/img/heroes/ute-valley-park-hero.jpg"
-                  width="300"
-                  height="450"
-                  sizes="150 md:300"
-                  quality="60"
-                  alt=""
-                  :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}" />
-                <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-              </div>
-            </div>
-            <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
-              <div class="relative">
-                <NuxtPicture
-                  src="/img/heroes/ute-valley-park-hero-2.jpg"
-                  width="300"
-                  height="450"
-                  sizes="150 md:300"
-                  quality="60"
-                  alt=""
-                  :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}" />
-                <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-              </div>
-              <div class="relative">
-                <NuxtPicture
-                  src="/img/heroes/ute-valley-park-hero-3.jpg"
-                  width="300"
-                  height="450"
-                  sizes="150 md:300"
-                  quality="60"
-                  alt=""
-                  :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}" />
-                <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-              </div>
-            </div>
-            <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
-              <div class="relative">
-                <NuxtPicture
-                  src="/img/heroes/ute-valley-park-hero-4.jpg"
-                  width="300"
-                  height="450"
-                  sizes="150 md:300"
-                  quality="60"
-                  alt=""
-                  :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}" />
-                <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-              </div>
-              <div class="relative">
-                <NuxtPicture
-                  src="/img/heroes/ute-valley-park-hero-5.jpg"
-                  width="300"
-                  height="450"
-                  sizes="150 md:300"
-                  quality="60"
-                  alt=""
-                  :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}" />
-                <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CTA -->
-  <div class="bg-white">
-    <div class="mx-auto max-w-7xl py-12 sm:px-6 sm:py-24 lg:px-8">
-      <div class="relative isolate overflow-hidden bg-green-800 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+      <div class="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48">
         <svg
-          viewBox="0 0 1024 1024"
-          class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
-          aria-hidden="true">
-          <circle
-            cx="512"
-            cy="512"
-            r="512"
-            fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
-            fill-opacity="0.7" />
+          viewBox="0 0 801 1036"
+          aria-hidden="true"
+          class="w-[50.0625rem]">
+          <path
+            fill="url(#70656b7e-db44-4b9b-b7d2-1f06791bed52)"
+            fill-opacity=".3"
+            d="m282.279 843.371 32.285 192.609-313.61-25.32 281.325-167.289-58.145-346.888c94.5 92.652 277.002 213.246 251.009-45.597C442.651 127.331 248.072 10.369 449.268.891c160.956-7.583 301.235 116.434 351.256 179.39L507.001 307.557l270.983 241.04-495.705 294.774Z" />
           <defs>
-            <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-              <stop stop-color="#7775D6" />
+            <linearGradient
+              id="70656b7e-db44-4b9b-b7d2-1f06791bed52"
+              x1="508.179"
+              x2="-28.677"
+              y1="-116.221"
+              y2="1091.63"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#14532d" />
               <stop
                 offset="1"
-                stop-color="#E935C1" />
-            </radialGradient>
+                stop-color="#4ade80" />
+            </linearGradient>
           </defs>
         </svg>
-        <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Ready to help?
-          </h2>
-          <p class="mt-6 text-lg leading-8 text-gray-100">
-            Donate or Volunteer today. Get involved and help Ute Valley Park by making a tax deductible donation or volunteering.
-          </p>
-          <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-            <a
-              href="/donate/"
-              class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Donate</a>
-            <a
-              href="/volunteer/"
-              class="text-sm font-semibold leading-6 text-white">Volunteer<span aria-hidden="true">→</span></a>
+      </div>
+      <div class="overflow-hidden">
+        <div class="mx-auto max-w-7xl px-6 pb-24 pt-36 sm:pt-60 lg:px-8 lg:pt-24">
+          <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+            <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
+              <div class="group relative inline-flex">
+                <div
+                  class="transitiona-all animate-tilt absolute -inset-px rounded-xl bg-gradient-to-r from-[#6be6e0] via-[#31e721] to-[#1c8f02] opacity-40 blur-lg duration-1000 group-hover:-inset-1 group-hover:opacity-70 group-hover:duration-200" />
+
+                <a
+                  href="/visit/"
+                  class="relative inline-flex items-center rounded-full bg-slate-800 p-1 pr-2 text-lg font-bold text-white transition-all duration-200 hover:text-gray-200 sm:text-base lg:text-sm xl:text-base">
+                  <span class="rounded-full bg-gradient-to-r from-teal-500 to-green-600 px-3 py-0.5 text-sm font-semibold leading-5 text-white">Visit Ute Valley Park</span>
+                  <span class="ml-4 text-sm">Find out more</span>
+                  <Icon
+                    name="heroicons:chevron-right"
+                    class="ml-2 h-5 w-5 text-gray-500"
+                    aria-hidden="true" />
+                </a>
+              </div>
+              <h2 class="mt-4 text-7xl font-bold tracking-tight">
+                <span class="inline text-gray-900">Friends of</span>
+                <span class="inline text-green-600"> Ute Valley Park</span>
+              </h2>
+              <p class="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                <a
+                  href="/about/"
+                  class="text-green-700 underline decoration-green-500 decoration-[0.25rem] hover:decoration-green-500/50 hover:decoration-[0.5rem] focus:decoration-green-500/50 focus:decoration-[0.5rem] motion-safe:transition-all motion-safe:duration-200">Friends of Ute Valley Park</a> is an officially recognized “Friends” organization by the City of Colorado Springs Parks, Recreation, and Cultural Services Department. Our mission is to maintain, preserve, and provide
+                education for Ute Valley Park.
+              </p>
+            </div>
+            <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+              <div class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+                <div
+                  class="relative"
+                  transition:name="hero">
+                  <NuxtPicture
+                    src="/img/heroes/ute-valley-park-hero.jpg"
+                    width="300"
+                    height="450"
+                    sizes="150 md:300"
+                    quality="60"
+                    alt=""
+                    :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}" />
+                  <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                </div>
+              </div>
+              <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
+                <div class="relative">
+                  <NuxtPicture
+                    src="/img/heroes/ute-valley-park-hero-2.jpg"
+                    width="300"
+                    height="450"
+                    sizes="150 md:300"
+                    quality="60"
+                    alt=""
+                    :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}" />
+                  <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                </div>
+                <div class="relative">
+                  <NuxtPicture
+                    src="/img/heroes/ute-valley-park-hero-3.jpg"
+                    width="300"
+                    height="450"
+                    sizes="150 md:300"
+                    quality="60"
+                    alt=""
+                    :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}" />
+                  <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                </div>
+              </div>
+              <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+                <div class="relative">
+                  <NuxtPicture
+                    src="/img/heroes/ute-valley-park-hero-4.jpg"
+                    width="300"
+                    height="450"
+                    sizes="150 md:300"
+                    quality="60"
+                    alt=""
+                    :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}" />
+                  <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                </div>
+                <div class="relative">
+                  <NuxtPicture
+                    src="/img/heroes/ute-valley-park-hero-5.jpg"
+                    width="300"
+                    height="450"
+                    sizes="150 md:300"
+                    quality="60"
+                    alt=""
+                    :img-attrs="{class: 'aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'}" />
+                  <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="relative mt-16 h-80 lg:mt-8">
-          <NuxtPicture
-            :img-attrs="{class: 'absolute left-0 top-0 w-[47rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10'}"
-            src="img/cta/home-page-cta.jpg"
-            sizes="xs:300px md:500px lg:800"
-            quality="60"
-            alt="Volunteers working on a fence"
-            width="900"
-            height="540" />
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="bg-white">
+      <div class="mx-auto max-w-7xl py-12 sm:px-6 sm:py-24 lg:px-8">
+        <div class="relative isolate overflow-hidden bg-green-800 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+          <svg
+            viewBox="0 0 1024 1024"
+            class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+            aria-hidden="true">
+            <circle
+              cx="512"
+              cy="512"
+              r="512"
+              fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+              fill-opacity="0.7" />
+            <defs>
+              <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                <stop stop-color="#7775D6" />
+                <stop
+                  offset="1"
+                  stop-color="#E935C1" />
+              </radialGradient>
+            </defs>
+          </svg>
+          <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Ready to help?
+            </h2>
+            <p class="mt-6 text-lg leading-8 text-gray-100">
+              Donate or Volunteer today. Get involved and help Ute Valley Park by making a tax deductible donation or volunteering.
+            </p>
+            <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+              <a
+                href="/donate/"
+                class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Donate</a>
+              <a
+                href="/volunteer/"
+                class="text-sm font-semibold leading-6 text-white">Volunteer<span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="relative mt-16 h-80 lg:mt-8">
+            <NuxtPicture
+              :img-attrs="{class: 'absolute left-0 top-0 w-[47rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10'}"
+              src="img/cta/home-page-cta.jpg"
+              sizes="xs:300px md:500px lg:800"
+              quality="60"
+              alt="Volunteers working on a fence"
+              width="900"
+              height="540" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Newsletter -->
+    <!-- Newsletter -->
 
-  <div class="bg-white py-16">
-    <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">
-      <div class="max-w-xl text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:col-span-6">
-        <h2 class="inline sm:block lg:inline xl:block">
-          Want events, news and updates?
-        </h2>
-        <p class="inline sm:block lg:inline xl:block">
-          Sign up for our newsletter.
-        </p>
-      </div>
-      <div class="w-full md:max-w-xl lg:col-span-6 lg:max-w-md lg:pt-2">
-        <EmailForm />
-      </div>
-    </div>
-  </div>
-
-  <!-- News -->
-
-  <div class="relative px-4 pb-20 pt-16 sm:px-6 lg:px-8 lg:pb-28 lg:pt-24">
-    <div class="relative mx-auto max-w-7xl">
-      <div class="text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-green-800 sm:text-4xl">
-          Ute Valley Park News
-        </h2>
-        <p class="mt-2 text-lg leading-8 text-gray-600">
-          Find out what is happening in and around Ute Valley Park
-        </p>
-      </div>
-      <div class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-        <AppCard
-          v-for="(post, id) in newsItems"
-          :key="id"
-          :post="post"
-          :can-be-wide="false" />
+    <div class="bg-white py-16">
+      <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">
+        <div class="max-w-xl text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:col-span-6">
+          <h2 class="inline sm:block lg:inline xl:block">
+            Want events, news and updates?
+          </h2>
+          <p class="inline sm:block lg:inline xl:block">
+            Sign up for our newsletter.
+          </p>
+        </div>
+        <div class="w-full md:max-w-xl lg:col-span-6 lg:max-w-md lg:pt-2">
+          <EmailForm />
+        </div>
       </div>
     </div>
-  </div>
 
-  <LeaveNoTrace />
+    <!-- News -->
+
+    <div class="relative px-4 pb-20 pt-16 sm:px-6 lg:px-8 lg:pb-28 lg:pt-24">
+      <div class="relative mx-auto max-w-7xl">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold tracking-tight text-green-800 sm:text-4xl">
+            Ute Valley Park News
+          </h2>
+          <p class="mt-2 text-lg leading-8 text-gray-600">
+            Find out what is happening in and around Ute Valley Park
+          </p>
+        </div>
+        <div class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <AppCard
+            v-for="(post, id) in newsItems"
+            :key="id"
+            :post="post"
+            :can-be-wide="false" />
+        </div>
+      </div>
+    </div>
+
+    <LeaveNoTrace />
+  </div>
 </template>
 
 <script setup lang="ts">
