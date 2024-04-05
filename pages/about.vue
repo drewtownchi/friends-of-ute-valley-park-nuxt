@@ -4,7 +4,7 @@
       <h1 class="mb-8 mt-2 text-center text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
         About Friends of Ute Valley Park
       </h1>
-      <NuxtPicture class="mx-auto block h-64 w-auto"
+      <NuxtPicture :img-attrs="{class: 'mx-auto block h-64 w-auto mb-6'}"
                    src="img/logos/logo-medium.jpg"
                    width="256"
                    height="256"
@@ -55,7 +55,7 @@
       </div>
     </div>
     <TeamList />
-    <OldPhotos client:visible />
+    <OldPhotos />
 
     <div class="mt-8">
       <h2 class="mb-8 mt-2 text-center text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">

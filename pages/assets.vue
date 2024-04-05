@@ -1,0 +1,51 @@
+<template>
+  <div class="mt-16 bg-white">
+    <div class="mx-auto max-w-7xl">
+      <h1 class="mb-8 mt-2 text-center text-3xl font-extrabold leading-8 tracking-tight text-green-900 sm:text-4xl sm:leading-10">
+        Logos
+      </h1>
+      <div class="grid-cols-2 gap-3 sm:grid">
+        <div>
+          <img class="mx-auto h-64"
+               src="/img/logos/logo-small.jpg"
+               alt="small logo">
+          <p class="text-center text-sm text-gray-600">
+            Small logo
+          </p>
+        </div>
+        <div>
+          <img class="mx-auto h-64"
+               src="/img/logos/logo-medium.jpg"
+               alt="small logo">
+          <p class="text-center text-sm text-gray-600">
+            Medium logo
+          </p>
+        </div>
+        <div>
+          <img class="mx-auto h-64"
+               src="/img/logos/logo-full.jpg"
+               alt="small logo">
+          <p class="text-center text-sm text-gray-600">
+            Full size logo
+          </p>
+        </div>
+        <div>
+          <img class="mx-auto h-64"
+               src="/img/logos/logo-full-uncompressed.jpg"
+               alt="small logo">
+          <p class="text-center text-sm text-gray-600">
+            Full size logo uncompressed
+          </p>
+        </div>
+        <div>
+          <img class="mx-auto h-64"
+               src="/img/logos/logo-stickers.jpg"
+               alt="small logo">
+          <p class="text-center text-sm text-gray-600">
+            Logo with text for stickers
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

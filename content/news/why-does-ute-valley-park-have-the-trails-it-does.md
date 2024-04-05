@@ -2,7 +2,7 @@
 title: Why Does Ute Valley Park Have The Trails It Does?
 published: true
 publishedOn: 2022-10-24T16:21:28.759Z
-coverImage: img/news/ute-news-oct-24-2022.avif
+coverImage: img/news/ute-news-oct-24-2022.jpg
 previewText: What goes into making a trail? And Who Decides?!
 ---
 
