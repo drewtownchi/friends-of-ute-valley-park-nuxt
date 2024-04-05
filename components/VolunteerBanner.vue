@@ -11,7 +11,9 @@
       </svg>
       <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
         <p class="text-sm text-white">
-          <i-heroicons-megaphone class="mr-2 inline-block h-6 w-6 text-white" />
+          <Icon
+            name="heroicons:megaphone"
+            class="mr-2 inline-block h-6 w-6 text-white" />
           <strong class="font-semibold">Upcoming Volunteer Event {{ eventDates }}!</strong>
         </p>
         <a
