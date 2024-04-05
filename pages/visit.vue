@@ -120,6 +120,7 @@
                   width="568"
                   height="460"
                   sizes="300px md:600"
+                  loading="lazy"
                   :img-attrs="{class: 'mx-auto w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-96 lg:w-auto lg:max-w-none'}" />
                 <p class="mx-auto mt-1 w-1/2 text-center text-sm text-gray-700">Click to open fullsize map</p>
               </a>
@@ -185,6 +186,7 @@
                 width="600"
                 height="400"
                 sizes="200px md:400px"
+                loading="lazy"
                 class="rounded-lg object-cover object-center shadow-lg" />
             </div>
           </div>
@@ -245,6 +247,7 @@
                 width="800"
                 height="600"
                 sizes="220px md:440px"
+                loading="lazy"
                 class="rounded-lg object-cover object-center shadow-lg" />
             </div>
           </div>
@@ -294,6 +297,7 @@
               width="800"
               height="600"
               sizes="220px md:440px"
+              loading="lazy"
               class="rounded-lg object-cover object-center shadow-lg" />
           </div>
         </div>
