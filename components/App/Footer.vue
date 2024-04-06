@@ -32,6 +32,6 @@ const footerItems = [
   { name: 'Donate', link: '/donate/' },
   { name: 'Rules', link: '/rules/' },
   { name: 'Assets', link: '/assets/' },
-  { name: 'Sitemap', link: '/sitemap-index.xml' },
+  { name: 'Sitemap', link: '/sitemap.xml' },
 ];
 </script>

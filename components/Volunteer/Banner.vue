@@ -7,14 +7,21 @@
            class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 w-[36.0625rem] -translate-y-1/2 transform-gpu blur-2xl">
         <use href="#1d77c128-3ec1-4660-a7f6-26c7006705ad" />
       </svg>
-      <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-balance">
         <p class="text-sm text-white">
           <Icon name="heroicons:megaphone"
                 class="mr-2 inline-block h-6 w-6 text-white" />
           <strong class="font-semibold">Upcoming Volunteer Event {{ eventDates }}!</strong>
         </p>
-        <a href="/volunteer/"
-           class="flex-none rounded-full bg-green-700 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Learn more <span aria-hidden="true">&rarr;</span></a>
+        <UChip size="lg"
+               color="red">
+          <UButton to="/volunteer/"
+                   class="ml-8 sm:ml-0 flex-none rounded-full bg-green-700 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">
+            Learn more
+            <Icon aria-hidden="true"
+                  name="heroicons:arrow-right" />
+          </UButton>
+        </UChip>
       </div>
       <div class="flex flex-1 justify-end" />
     </div>

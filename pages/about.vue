@@ -63,8 +63,10 @@
       </h2>
       <NuxtPicture src="img/maps/colorado-land-survey-preview.jpg" />
       <div class="mt-1 text-center text-sm text-gray-600">
-        <a href="/img/maps/colorado-springs-coal-mine-survey.pdf"
-           download>Download (14.8 mb)</a>
+        <NuxtLink to="/img/maps/colorado-springs-coal-mine-survey.pdf"
+                  external>
+          Download (14.8 mb)
+        </NuxtLink>
       </div>
       <LeaveNoTraceSmall />
     </div>

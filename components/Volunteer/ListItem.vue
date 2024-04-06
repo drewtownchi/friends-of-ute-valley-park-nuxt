@@ -43,10 +43,10 @@
         </a>
       </div>
       <div class="flex h-12 gap-x-2.5">
-        <a href="https://coloradosprings.gov/sites/default/files/inline-images/informed_consent_and_release_form-fillable.pdf"
-           class="inline-flex items-center rounded-md border border-transparent bg-teal-600 px-2 py-1 text-sm font-medium text-teal-50 shadow-sm transition duration-150 ease-in-out hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
+        <NuxtLink to="https://coloradosprings.gov/sites/default/files/inline-images/informed_consent_and_release_form-fillable.pdf"
+                  class="inline-flex items-center rounded-md border border-transparent bg-teal-600 px-2 py-1 text-sm font-medium text-teal-50 shadow-sm transition duration-150 ease-in-out hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
           Consent and Release Form
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </li>

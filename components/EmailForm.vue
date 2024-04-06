@@ -1,7 +1,8 @@
 <template>
   <div class="sm:text-center lg:mx-0 lg:text-left">
-    <div v-if="status === 'idle' || status === 'error'">
-      <form class="mt-3 sm:flex"
+    <div>
+      <form v-if="status !== 'success'"
+            class="mt-3 sm:flex"
             @submit="submit">
         <label for="name"
                class="sr-only">Name</label>
@@ -12,7 +13,7 @@
                :class="{
                  'border-red-300 text-red-900 placeholder-red-300 focus:border-red-500 focus:outline-none focus:ring-red-500': nameIsError,
                }"
-               class="mr-4 block w-full rounded-md border-gray-300 py-3 text-base placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500 sm:flex-1"
+               class="pl-2 mr-4 block w-full rounded-md border-gray-300 py-3 text-base placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500 sm:flex-1"
                placeholder="Full name"
                @blur="validate">
         <label for="email"
@@ -24,7 +25,7 @@
                :class="{
                  'border-red-300 text-red-900 placeholder-red-300 focus:border-red-500 focus:outline-none focus:ring-red-500': emailIsError,
                }"
-               class="mt-3 block w-full rounded-md border-gray-300 py-3 text-base placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500 sm:mt-0 sm:flex-1"
+               class="pl-2 mt-3 block w-full rounded-md border-gray-300 py-3 text-base placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500 sm:mt-0 sm:flex-1"
                placeholder="Email"
                @blur="validate">
         <button :disabled="status === 'pending'"
