@@ -1,106 +1,89 @@
 <template>
-  <div class="sm:text-center lg:mx-0 lg:text-left">
-    <div>
-      <form v-if="status !== 'success'"
-            class="mt-3 sm:flex"
-            @submit="submit">
-        <label for="name"
-               class="sr-only">Name</label>
-        <input id="name"
-               v-model="payload.name"
-               type="text"
-               name="name"
-               :class="{
-                 'border-red-300 text-red-900 placeholder-red-300 focus:border-red-500 focus:outline-none focus:ring-red-500': nameIsError,
-               }"
-               class="pl-2 mr-4 block w-full rounded-md border-gray-300 py-3 text-base placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500 sm:flex-1"
-               placeholder="Full name"
-               @blur="validate">
-        <label for="email"
-               class="sr-only">Email</label>
-        <input id="email"
-               v-model="payload.email"
-               type="text"
-               name="email"
-               :class="{
-                 'border-red-300 text-red-900 placeholder-red-300 focus:border-red-500 focus:outline-none focus:ring-red-500': emailIsError,
-               }"
-               class="pl-2 mt-3 block w-full rounded-md border-gray-300 py-3 text-base placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500 sm:mt-0 sm:flex-1"
-               placeholder="Email"
-               @blur="validate">
-        <button :disabled="status === 'pending'"
-                type="submit"
-                class="mt-3 w-full rounded-md border border-transparent bg-green-700 px-6 py-3 text-base font-medium text-green-50 shadow-sm hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 disabled:bg-green-600 sm:ml-3 sm:mt-0 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center">
-          <span>
-            <Icon v-if="status === 'pending'"
-                  name="i-mdi-loading"
-                  class="-ml-2 mr-2 h-6 w-6 animate-spin text-white" />
-          </span>
-          Notify me
-        </button>
-      </form>
-      <p v-if="nameValidationError || emailValidationError"
-         class="mt-2 text-sm text-red-600">
-        {{ nameValidationError }}
-        {{ emailValidationError }}
-      </p>
+  <div class="sm:text-center lg:mx-0 lg:text-left ">
+    <div v-if="!success">
+      <UForm ref="form"
+             :schema="schema"
+             :state="state"
+             class="flex space-x-2 items-center content-center"
+             @submit="onSubmit">
+        <UFormGroup label="Full name"
+                    name="name">
+          <UInput v-model="state.name"
+                  icon="i-heroicons-user" />
+        </UFormGroup>
+        <UFormGroup label="Email"
+                    name="email">
+          <UInput v-model="state.email"
+                  icon="i-heroicons-envelope"
+                  type="email" />
+        </UFormGroup>
+        <div class="mt-6">
+          <UButton type="submit">
+            Submit
+          </UButton>
+        </div>
+      </UForm>
       <p class="mt-3 text-sm text-gray-500">
         We care about your data. Read our
         <a href="/privacy/"
            class="font-medium text-gray-900 underline"> Privacy Policy</a>.
       </p>
     </div>
-    <div v-if="status === 'success'">
+    <div v-if="success">
       <p class="text-base font-medium text-gray-900">
         Thank you for signing up. Please check your email for a confirmation email.
       </p>
-    </div>
-    <div v-if="error"
-         class="mt-2 text-sm text-red-600">
-      <h2 class="text-3xl font-medium">
-        Submit Error
-      </h2>
-      {{ data.message }}
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const nameIsError = ref(false);
-const emailIsError = ref(false);
-const emailValidationError = ref('');
-const nameValidationError = ref('');
-const payload = ref({ name: '', email: '' });
+import type { FormError, FormSubmitEvent } from '#ui/types'
+import { z } from 'zod'
 
-const { data, error, execute, status } = await useLazyFetch('/.netlify/functions/email-signup', {
-  immediate: false,
-  watch: false,
-  method: 'POST',
-  body: payload.value,
+interface Response {
+  status: boolean
+  message: string
+}
+
+const schema = z.object({
+  name: z.string().min(3, 'Must be at least 3 characters').refine(s => s.includes(' '), 'Please enter your full name'),
+  email: z.string().email()
 })
 
-const submit = async function (e: Event) {
-  console.log('hi')
-  e.preventDefault();
-  validate();
-  if (nameValidationError.value || emailValidationError.value) return;
-  await execute();
-};
+const state = reactive({
+  name: undefined,
+  email: undefined
+})
 
-const validate = function () {
-  if (payload.value.name) {
-    nameIsError.value = false;
-    nameValidationError.value = '';
-  } else {
-    nameIsError.value = true;
-    nameValidationError.value = 'Please enter your name.';
+const form = ref()
+const success = ref(false)
+
+async function onSubmit(event: FormSubmitEvent<any>) {
+  form.value.clear()
+  const payload = event.data
+  try {
+    const response: Response = await $fetch('/.netlify/functions/email-signup', {
+      method: 'POST',
+      body: JSON.stringify(payload)
+    })
+    if(response.status === true) {
+      success.value = true
+    } else {
+      form.value.setErrors([{message: response.message, path: 'name'}])
+    }
+  } catch (err: any) {
+    if (err.statusCode === 500) {
+      form.value.setErrors([{message: 'An error occurred. Please try again later.', path: 'name'}])
+    }
+    if (err.statusCode === 422) {
+      form.value.setErrors(err.data.errors.map((err: FormError) => ({
+        message: err.message,
+        path: err.path,
+      })))
+    }
   }
-  if (payload.value.email && payload.value.email.includes('@') && payload.value.email.includes('.')) {
-    emailIsError.value = false;
-    emailValidationError.value = '';
-  } else {
-    emailIsError.value = true;
-    emailValidationError.value = 'Please enter a valid email address.';
-  }
-};
+}
+
+
 </script>

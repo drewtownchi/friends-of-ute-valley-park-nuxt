@@ -18,5 +18,8 @@ export default defineNuxtConfig({
         trailingSlash: 'append'
       }
     }
+  },
+  colorMode: {
+    preference: 'light'
   }
 })
