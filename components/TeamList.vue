@@ -14,15 +14,14 @@
           <li v-for="teamMember in teamMembers"
               :key="teamMember.name">
             <div class="space-y-4">
-              <NuxtPicture v-if="teamMember.image !== ''"
-                           :img-attrs="{class: 'mx-auto h-20 w-20 rounded-full lg:h-24 lg:w-24'}"
-                           :src="teamMember.image"
-                           sizes="60px md:120px"
-                           alt="" />
-              <Icon v-else
-                    name="heroicons:user-circle"
-                    class="mx-auto h-20 w-20 text-green-800 lg:h-24 lg:w-24" />
-
+              <UAvatar :as="NuxtImg"
+                       :src="teamMember.image"
+                       size="3xl"
+                       width="80px"
+                       height="80px"
+                       format="webp"
+                       sizes="50px md:100px"
+                       :alt="teamMember.name" />
               <div class="space-y-2">
                 <div class="text-xs font-medium leading-4 lg:text-sm lg:leading-5">
                   <h4>{{ teamMember.name }}</h4>
@@ -40,6 +39,8 @@
 </template>
 
 <script setup lang="ts">
+const NuxtImg = resolveComponent('NuxtImg')
+
 const teamMembers = [
   { name: 'Drew Town', title: 'Chair', image: 'img/members/drew-town.png' },
   { name: 'Christine Thomas', title: 'Vice-Chair', image: 'img/members/christine-thomas.jpg' },
