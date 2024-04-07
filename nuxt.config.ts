@@ -1,5 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  site: {
+    name: 'Friends Of Ute Valley Park',
+    url: 'https://friendsofutevalleypark.com'
+  },
   devtools: { enabled: true },
   modules: [
     '@nuxt/ui',
