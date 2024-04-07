@@ -3,36 +3,40 @@ import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { JWT } from 'google-auth-library';
 require('dotenv').config();
 
-export async function handler(event, context, callback) {
-  const data = generateRequestData(event.body);
-  // eslint-disable-next-line no-console
-  console.log(data);
+export async function handler(event) {
+  const data = event.body ? JSON.parse(event.body) : {};
+
+  const errors = [];
   if (!data.email) {
-    return {
-      statusCode: 400,
-      body: JSON.stringify({
-        status: false,
-        message: 'Email address required',
-      }),
-    };
+    errors.push({
+      message: "Email required",
+      path: "email",
+    });
   }
 
   if (!data.name) {
-    return {
-      statusCode: 400,
-      body: JSON.stringify({
-        status: false,
-        message: 'Name required',
-      }),
-    };
+    errors.push({
+      message: "Name required",
+      path: "name",
+    });
   }
-
+  if (!data.category) {
+    errors.push({
+      message: "Category required",
+      path: "category",
+    });
+  }
   if (!data.message) {
+    errors.push({
+      message: "Message required",
+      path: "message",
+    });
+  }
+  if (errors.length > 0) {
     return {
-      statusCode: 400,
+      statusCode: 422,
       body: JSON.stringify({
-        status: false,
-        message: 'Message required',
+        errors,
       }),
     };
   }
@@ -64,21 +68,5 @@ export async function handler(event, context, callback) {
   return {
     statusCode: 200,
     body: JSON.stringify({ status: true }),
-  };
-}
-
-function generateRequestData(eventBody) {
-  let body = {};
-  try {
-    body = JSON.parse(eventBody);
-  } catch (e) {
-    body = parse(eventBody);
-  }
-
-  return {
-    email: body.payload.email,
-    name: body.payload.name,
-    category: body.payload.category,
-    message: body.payload.message,
   };
 }
