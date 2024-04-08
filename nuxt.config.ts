@@ -21,7 +21,8 @@ export default defineNuxtConfig({
       nuxtLink: {
         trailingSlash: 'append'
       }
-    }
+    },
+    componentIslands: true,
   },
   colorMode: {
     preference: 'light'
