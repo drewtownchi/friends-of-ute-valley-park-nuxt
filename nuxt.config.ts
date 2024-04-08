@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     "@nuxt/image",
     "@nuxtjs/sitemap",
+    "nuxt-lazy-hydrate",
   ],
   image: {
     format: ['avif', 'webp'],
