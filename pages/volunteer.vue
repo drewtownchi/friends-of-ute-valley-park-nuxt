@@ -62,7 +62,7 @@
                 5:30-7:30 p.m. April through September.
               </li>
               <li class="py-3">
-                Crew leaders maybe schedule additional volunteer days. Please check our website, the
+                Crew leaders may schedule additional volunteer days. Please check our website, the
                 FUVP <a href="https://www.facebook.com/FriendsOfUteValleyPark/"
                         class="font-semibold text-green-700 no-underline">Facebook
                 </a>
