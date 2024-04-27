@@ -1,6 +1,6 @@
 ---
 title: Wednesday Evening Work Session - 9/1/2021
-date: 2025-09-01T17:09:49.323Z
+date: 2021-09-01T17:09:49.323Z
 description: Come join the Friends of Ute Valley on our Wednesday night
   volunteer work session as we continue making trail improvements with the new
   Ute Valley Regional Trail and close down rogue social trails on Rattlesnake

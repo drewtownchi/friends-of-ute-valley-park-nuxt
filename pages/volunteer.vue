@@ -22,8 +22,8 @@
             Work with us
           </h2>
           <p class="mt-6 text-lg leading-8 text-gray-200">
-            Join our volunteer efforts at Ute Valley Park to maintain and enhance the trails, meet fellow
-            park enthusiasts, and give back to the park that provides so much enjoyment for the community.
+            Join our dedicated team of volunteers and make a lasting impact on the park you love. Together, we'll maintain trails, connect with fellow nature enthusiasts, and give back to this cherished
+            community resource.
           </p>
         </div>
       </div>
@@ -113,7 +113,7 @@
       </slot>
       <slot name="subtitle">
         <p class="mt-3 text-lg leading-7 text-gray-600">
-          Help make Ute Valley Park better by volunteering.
+          We'd love to hear from you! Whether you have questions about volunteering or just want to share your thoughts on Ute Valley Park, feel free to get in touch.
         </p>
       </slot>
     </ContactForm>
