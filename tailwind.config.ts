@@ -1,13 +1,13 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 // Default are on https://tailwindcss.nuxtjs.org/tailwind/config#default-configuration
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 
 export default <Partial<Config>>{
   theme: {
     colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
+      transparent: "transparent",
+      current: "currentColor",
       black: colors.black,
       white: colors.white,
       gray: colors.gray,
@@ -18,4 +18,4 @@ export default <Partial<Config>>{
     },
   },
   darkMode: [],
-}
+};

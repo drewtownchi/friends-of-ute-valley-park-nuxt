@@ -308,6 +308,10 @@
 <script setup lang="ts">
 import type { MarkdownParsedContent } from "@nuxt/content/dist/runtime/types";
 
+useHead({
+  title: "Visit",
+});
+
 const activities = [
   {
     name: "Hiking",

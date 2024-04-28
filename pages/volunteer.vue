@@ -162,6 +162,10 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: "Volunteer",
+});
+
 const { data: upcomingVolunteerEvents } = await useAsyncData("volunteer-events", () =>
   queryContent("events")
     .sort({ date: 1 })

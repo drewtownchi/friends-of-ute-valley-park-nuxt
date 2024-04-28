@@ -236,6 +236,10 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: "Home",
+});
+
 const { data: newsItems } = await useAsyncData("news-home", () =>
   queryContent("news").sort({ publishedOn: -1 }).limit(3).only(["title", "publishedOn", "coverImage", "_path"]).find(),
 );

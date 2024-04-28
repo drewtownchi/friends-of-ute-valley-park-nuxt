@@ -15,7 +15,7 @@
             <UInput v-model="state.email" icon="i-heroicons-envelope" type="email" />
           </UFormGroup>
           <div class="mt-6">
-            <UButton type="submit"> Submit </UButton>
+            <UButton type="submit" :ui="{ variant: { solid: 'bg-green-700 text-base' } }"> Submit </UButton>
           </div>
         </UForm>
         <p class="mt-3 text-sm text-gray-500">

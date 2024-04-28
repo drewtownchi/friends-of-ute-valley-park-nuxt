@@ -16,3 +16,12 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+useHead({
+  htmlAttrs: {
+    lang: "en",
+  },
+  titleTemplate: "%s - Friends Of Ute Valley Park",
+});
+</script>

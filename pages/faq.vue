@@ -19,6 +19,10 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: "FAQ",
+});
+
 const faqs = [
   {
     question: "How do I find my way around UVP? I am always getting lost.",
