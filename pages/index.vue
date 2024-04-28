@@ -12,23 +12,19 @@
             x="50%"
             y="-1"
             patternUnits="userSpaceOnUse">
-            <path
-d="M.5 200V.5H200" fill="none" />
+            <path d="M.5 200V.5H200" fill="none" />
           </pattern>
         </defs>
-        <svg
-x="50%" y="-1" class="overflow-visible fill-gray-50">
+        <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
           <path
             d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
             stroke-width="0" />
         </svg>
-        <rect
-width="100%" height="100%" stroke-width="0" fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" />
+        <rect width="100%" height="100%" stroke-width="0" fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" />
       </svg>
       <div
         class="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48">
-        <svg
-viewBox="0 0 801 1036" aria-hidden="true" class="w-[50.0625rem]">
+        <svg viewBox="0 0 801 1036" aria-hidden="true" class="w-[50.0625rem]">
           <path
             fill="url(#70656b7e-db44-4b9b-b7d2-1f06791bed52)"
             fill-opacity=".3"
@@ -42,8 +38,7 @@ viewBox="0 0 801 1036" aria-hidden="true" class="w-[50.0625rem]">
               y2="1091.63"
               gradientUnits="userSpaceOnUse">
               <stop stop-color="#14532d" />
-              <stop
-offset="1" stop-color="#4ade80" />
+              <stop offset="1" stop-color="#4ade80" />
             </linearGradient>
           </defs>
         </svg>
@@ -64,8 +59,7 @@ offset="1" stop-color="#4ade80" />
                     >Visit Ute Valley Park</span
                   >
                   <span class="ml-4 text-sm">Find out more</span>
-                  <Icon
-name="heroicons:chevron-right" class="ml-2 h-5 w-5 text-gray-500" aria-hidden="true" />
+                  <Icon name="heroicons:chevron-right" class="ml-2 h-5 w-5 text-gray-500" aria-hidden="true" />
                 </a>
               </div>
               <h2 class="mt-4 text-7xl font-bold tracking-tight">
@@ -86,8 +80,7 @@ name="heroicons:chevron-right" class="ml-2 h-5 w-5 text-gray-500" aria-hidden="t
             <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
               <div
                 class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
-                <div
-class="relative" transition:name="hero">
+                <div class="relative" transition:name="hero">
                   <NuxtPicture
                     src="/img/heroes/ute-valley-park-hero.jpg"
                     width="300"
@@ -162,13 +155,11 @@ class="relative" transition:name="hero">
             viewBox="0 0 1024 1024"
             class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
             aria-hidden="true">
-            <circle
-cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
+            <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
             <defs>
               <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
                 <stop stop-color="#7775D6" />
-                <stop
-offset="1" stop-color="#E935C1" />
+                <stop offset="1" stop-color="#E935C1" />
               </radialGradient>
             </defs>
           </svg>
@@ -184,15 +175,15 @@ offset="1" stop-color="#E935C1" />
                 class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >Donate</a
               >
-              <a
-href="/volunteer/" class="text-sm font-semibold leading-6 text-white"
+              <a href="/volunteer/" class="text-sm font-semibold leading-6 text-white"
                 >Volunteer<span aria-hidden="true">→</span></a
               >
             </div>
           </div>
           <div class="relative mt-16 h-80 lg:mt-8">
             <NuxtPicture
-:img-attrs="{class: 'absolute left-0 top-0 w-[47rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10'}"
+              :img-attrs="{
+                class: 'absolute left-0 top-0 w-[47rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10',
               }"
               src="img/cta/home-page-cta.jpg"
               sizes="xs:300px md:500px lg:800"

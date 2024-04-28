@@ -13,18 +13,15 @@
               x="50%"
               y="-1"
               patternUnits="userSpaceOnUse">
-              <path
-d="M100 200V.5M.5 .5H200" fill="none" />
+              <path d="M100 200V.5M.5 .5H200" fill="none" />
             </pattern>
           </defs>
-          <svg
-x="50%" y="-1" class="overflow-visible fill-gray-50">
+          <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
             <path
               d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
               stroke-width="0" />
           </svg>
-          <rect
-width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+          <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
         </svg>
       </div>
       <div
@@ -46,7 +43,8 @@ width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-1
         <div
           class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <NuxtPicture
-:img-attrs="{class: 'w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]'}"
+            :img-attrs="{
+              class: 'w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]',
             }"
             width="900"
             height="600"
