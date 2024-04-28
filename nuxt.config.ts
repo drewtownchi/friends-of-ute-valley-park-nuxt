@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   modules: [
+    '@nuxt/eslint',
     '@nuxt/ui',
     'nuxt-headlessui',
     '@vueuse/nuxt',
@@ -27,5 +28,5 @@ export default defineNuxtConfig({
   },
   colorMode: {
     preference: 'light'
-  }
+  },
 })

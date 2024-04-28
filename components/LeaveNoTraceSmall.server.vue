@@ -1,30 +1,27 @@
 <template>
-  <div class="mx-4 my-16 max-w-7xl rounded-lg bg-green-700 px-4 py-12 sm:px-6 lg:flex lg:items-center lg:justify-between lg:px-8 lg:py-16">
+  <div
+    class="mx-4 my-16 max-w-7xl rounded-lg bg-green-700 px-4 py-12 sm:px-6 lg:flex lg:items-center lg:justify-between lg:px-8 lg:py-16">
     <div>
-      <h2 class="block text-4xl font-extrabold tracking-tight text-green-50 sm:text-5xl">
-        Leave No Trace
-      </h2>
+      <h2 class="block text-4xl font-extrabold tracking-tight text-green-50 sm:text-5xl">Leave No Trace</h2>
       <p class="border-b-2 border-green-200 pb-2 text-xl font-semibold text-green-100">
         Ute Valley Park proudly supports The 7 Principles of Leave No Trace.
       </p>
       <p class="mt-3 text-lg text-green-50">
         Please read and always obey the
-        <NuxtLink to="/rules/"
-                  class="inline-block font-bold text-gray-50 underline">
-          rules
-        </NuxtLink>
+        <NuxtLink to="/rules/" class="inline-block font-bold text-gray-50 underline"> rules </NuxtLink>
         of Ute Valley Park.
       </p>
     </div>
     <div class="mt-8 md:ml-8 lg:mt-0 lg:flex-shrink-0">
       <div class="mx-auto w-64 rounded-md bg-white p-8 shadow focus-within:ring-2 focus-within:ring-green-100">
         <a href="https://www.lnt.org">
-          <NuxtPicture class="h-auto w-64"
-                       src="/img/logos/leave-no-trace.jpg"
-                       alt="Leave No Trace logo"
-                       width="192"
-                       height="100"
-                       loading="lazy" />
+          <NuxtPicture
+            class="h-auto w-64"
+            src="/img/logos/leave-no-trace.jpg"
+            alt="Leave No Trace logo"
+            width="192"
+            height="100"
+            loading="lazy" />
         </a>
       </div>
     </div>

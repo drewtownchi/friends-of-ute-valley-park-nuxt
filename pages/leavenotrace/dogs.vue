@@ -6,41 +6,40 @@
           <div class="sm:max-w-lg">
             <h1 class="font text-4xl font-extrabold tracking-tight text-gray-900 sm:text-6xl">
               We
-              <svg class="inline-block h-32 w-32 text-red-600"
-                   fill="none"
-                   stroke="currentColor"
-                   viewBox="0 0 24 24"
-                   xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              <svg
+                class="inline-block h-32 w-32 text-red-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
               </svg>
               Dogs!
             </h1>
             <p class="mt-4 text-xl text-gray-500">
-              Dogs are always welcome in Ute Valley Park but please remember you <span
-                class="font-semibold uppercase text-green-600">must</span> leash your furry friend. Ute
-              Valley Park <span class="font-semibold uppercase text-green-600">does not have an off-leash
-                dog area</span> and dogs are required to be leashed at all times.
+              Dogs are always welcome in Ute Valley Park but please remember you
+              <span class="font-semibold uppercase text-green-600">must</span> leash your furry friend. Ute Valley Park
+              <span class="font-semibold uppercase text-green-600">does not have an off-leash dog area</span> and dogs
+              are required to be leashed at all times.
             </p>
             <p class="mt-2 text-gray-500">
-              Also, please follow the rest of the simple rules below to keep other guests, your dog and
-              the wildlife safe.
+              Also, please follow the rest of the simple rules below to keep other guests, your dog and the wildlife
+              safe.
             </p>
           </div>
           <div>
             <div class="mt-10">
-              <div aria-hidden="true"
-                   class="lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
+              <div aria-hidden="true" class="lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
                 <div
                   class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
                   <transition name="fade">
-                    <div v-if="showDogs"
-                         class="flex items-center space-x-6 lg:space-x-8">
+                    <div v-if="showDogs" class="flex items-center space-x-6 lg:space-x-8">
                       <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div
-                          class="relative h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                        <div class="relative h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                           <DogImage :name="dogs[0]" />
                         </div>
                         <div class="relative h-64 w-44 overflow-hidden rounded-lg">
@@ -71,11 +70,16 @@
                 </div>
               </div>
               <div class="relative z-50 flex w-60 flex-wrap sm:w-full">
-                <a href="#off-leash"
-                   class="inline-block grow-0 rounded-md border border-transparent bg-green-600 px-8 py-3 text-center font-medium text-white hover:bg-green-700">Off-leash
-                  Parks</a>
-                <a href="#rules"
-                   class="ml-0 mt-2 inline-block grow-0 rounded-md border border-transparent bg-teal-600 px-8 py-3 text-center font-medium text-white hover:bg-teal-700 sm:ml-2 sm:mt-0">Rules</a>
+                <a
+                  href="#off-leash"
+                  class="inline-block grow-0 rounded-md border border-transparent bg-green-600 px-8 py-3 text-center font-medium text-white hover:bg-green-700"
+                  >Off-leash Parks</a
+                >
+                <a
+                  href="#rules"
+                  class="ml-0 mt-2 inline-block grow-0 rounded-md border border-transparent bg-teal-600 px-8 py-3 text-center font-medium text-white hover:bg-teal-700 sm:ml-2 sm:mt-0"
+                  >Rules</a
+                >
               </div>
             </div>
           </div>
@@ -83,54 +87,48 @@
       </div>
     </div>
 
-    <div id="off-leash"
-         class="mx-auto max-w-xl px-4 pt-24 sm:px-6 sm:pt-32 lg:max-w-7xl lg:px-8">
+    <div id="off-leash" class="mx-auto max-w-xl px-4 pt-24 sm:px-6 sm:pt-32 lg:max-w-7xl lg:px-8">
       <h2 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
         Off-leash dog parks in Colorado Springs
       </h2>
-      <ul role="list"
-          class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
-        <li v-for="park in otherParks"
-            :key="park.name"
-            class="col-span-1 mx-16 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow-lg sm:mx-0">
+      <ul role="list" class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+        <li
+          v-for="park in otherParks"
+          :key="park.name"
+          class="col-span-1 mx-16 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow-lg sm:mx-0">
           <div class="flex flex-1 flex-col">
-            <NuxtPicture :img-attrs="{ class: 'h-48 w-full overflow-hidden rounded-t-lg' }"
-                         :src="park.image"
-                         sizes="135 md:270"
-                         width="270"
-                         height="192"
-                         alt="" />
+            <NuxtPicture
+              :img-attrs="{ class: 'h-48 w-full overflow-hidden rounded-t-lg' }"
+              :src="park.image"
+              sizes="135 md:270"
+              width="270"
+              height="192"
+              alt="" />
             <div class="px-8 py-6">
               <h3 class="mt-6 text-sm font-medium text-gray-900">
                 {{ park.name }}
               </h3>
               <dl class="mt-1 flex flex-grow flex-col justify-between">
-                <dt class="sr-only">
-                  Park Type
-                </dt>
-                <dd class="text-sm text-gray-500">
-                  {{ park.type }} off-leash park
-                </dd>
+                <dt class="sr-only">Park Type</dt>
+                <dd class="text-sm text-gray-500">{{ park.type }} off-leash park</dd>
               </dl>
               <h4 class="mt-4 text-gray-800">
                 How close is this park to <span class="text-green-800">Ute Valley Park?</span>
               </h4>
               <dl class="flex justify-center">
-                <dt class="sr-only">
-                  Distance
-                </dt>
+                <dt class="sr-only">Distance</dt>
                 <dd class="mx-2 mt-3">
                   <span
-                    class="whitespace-nowrap rounded-full bg-green-100 px-2 py-1 text-xs font-medium text-green-800">{{
-                    park.distance }}</span>
+                    class="whitespace-nowrap rounded-full bg-green-100 px-2 py-1 text-xs font-medium text-green-800"
+                    >{{ park.distance }}</span
+                  >
                 </dd>
-                <dt class="sr-only">
-                  Time
-                </dt>
+                <dt class="sr-only">Time</dt>
                 <dd class="mx-2 mt-3">
                   <span
-                    class="whitespace-nowrap rounded-full bg-teal-100 px-2 py-1 text-xs font-medium text-teal-800">{{
-                    park.time }}</span>
+                    class="whitespace-nowrap rounded-full bg-teal-100 px-2 py-1 text-xs font-medium text-teal-800"
+                    >{{ park.time }}</span
+                  >
                 </dd>
               </dl>
             </div>
@@ -138,37 +136,44 @@
           <div>
             <div class="-mt-px flex divide-x divide-gray-200">
               <div class="flex w-0 flex-1">
-                <NuxtLink :to="park.mapLink"
-                          class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500">
-                  <svg class="h-5 w-5 text-gray-400"
-                       fill="none"
-                       stroke="currentColor"
-                       viewBox="0 0 24 24"
-                       xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                <NuxtLink
+                  :to="park.mapLink"
+                  class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500">
+                  <svg
+                    class="h-5 w-5 text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                   <span class="ml-3">Visit</span>
                 </NuxtLink>
               </div>
               <div class="-ml-px flex w-0 flex-1">
-                <NuxtLink :to="park.cityLink"
-                          class="relative inline-flex w-0 flex-1 items-center justify-center rounded-br-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500">
-                  <svg class="h-5 w-5 text-gray-400"
-                       fill="none"
-                       stroke="currentColor"
-                       viewBox="0 0 24 24"
-                       xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <NuxtLink
+                  :to="park.cityLink"
+                  class="relative inline-flex w-0 flex-1 items-center justify-center rounded-br-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500">
+                  <svg
+                    class="h-5 w-5 text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <span class="ml-3">Info</span>
                 </NuxtLink>
@@ -177,25 +182,24 @@
           </div>
         </li>
       </ul>
-      <div id="rules"
-           class="flex w-full items-center justify-center">
-        <a class="my-8 inline-flex items-center rounded-full border border-transparent bg-green-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-           href="https://coloradosprings.gov/parks/page/dog-parks?mlid=4736">
-          <svg class="h-6 w-6"
-               fill="none"
-               stroke="currentColor"
-               viewBox="0 0 24 24"
-               xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-            <path stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+      <div id="rules" class="flex w-full items-center justify-center">
+        <a
+          class="my-8 inline-flex items-center rounded-full border border-transparent bg-green-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+          href="https://coloradosprings.gov/parks/page/dog-parks?mlid=4736">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
-          All Colorado Springs Off-leash dog parks</a>
+          All Colorado Springs Off-leash dog parks</a
+        >
       </div>
     </div>
     <div class="mx-auto max-w-xl px-4 pt-24 sm:px-6 sm:pt-32 lg:max-w-7xl lg:px-8">
@@ -204,31 +208,30 @@
           <h2 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
             Top reasons to keep your dog on a leash at all times
           </h2>
-          <ul role="list"
-              class="mt-8 space-y-3">
-            <li v-for="(reason, i) in reasons"
-                :key="i"
-                class="overflow-hidden bg-white px-4 py-4 shadow sm:rounded-md sm:px-6">
-              <svg class="inline-block h-6 w-6"
-                   fill="none"
-                   stroke="currentColor"
-                   viewBox="0 0 24 24"
-                   xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+          <ul role="list" class="mt-8 space-y-3">
+            <li
+              v-for="(reason, i) in reasons"
+              :key="i"
+              class="overflow-hidden bg-white px-4 py-4 shadow sm:rounded-md sm:px-6">
+              <svg
+                class="inline-block h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
               </svg>
               <span v-html="reason" />
             </li>
           </ul>
         </div>
         <div class="mx-auto mt-16 w-4/5 lg:m-0 lg:w-2/5 lg:p-8">
-          <NuxtPicture src="img/visit/dog.jpg"
-                       alt="dog in park in front of mountains"
-                       width="600"
-                       height="400"
-                       class="rounded shadow" />
+          <NuxtPicture
+            src="img/visit/dog.jpg"
+            alt="dog in park in front of mountains"
+            width="600"
+            height="400"
+            class="rounded shadow" />
         </div>
       </div>
     </div>
@@ -236,20 +239,15 @@
       <h2 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
         Rules for dogs at Ute Valley Park
       </h2>
-      <ul role="list"
-          class="my-8 space-y-3">
-        <li v-for="(rule, i) in rules"
-            :key="i"
-            class="overflow-hidden bg-white px-4 py-4 shadow sm:rounded-md sm:px-6">
-          <svg class="inline-block h-6 w-6"
-               fill="none"
-               stroke="currentColor"
-               viewBox="0 0 24 24"
-               xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+      <ul role="list" class="my-8 space-y-3">
+        <li v-for="(rule, i) in rules" :key="i" class="overflow-hidden bg-white px-4 py-4 shadow sm:rounded-md sm:px-6">
+          <svg
+            class="inline-block h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
           </svg>
           <span v-html="rule" />
         </li>
@@ -260,87 +258,85 @@
 
 <script setup lang="ts">
 const otherParks = [
-    {
-        name: 'Red Rock Canyon Open Space',
-        image: 'img/other-parks/red-rock-canyon-open-space.jpg',
-        type: 'Unfenced',
-        distance: '7.5 miles',
-        time: '15 minutes',
-        mapLink: 'https://goo.gl/maps/qAKchVJRqyTYUc8v9',
-        cityLink: 'https://coloradosprings.gov/parks/page/red-rock-canyon-open-space',
-    },
-    {
-        name: 'Palmer Park',
-        image: 'img/other-parks/palmer-park.jpg',
-        type: 'Fenced',
-        distance: '9.8 miles',
-        time: '20 minutes',
-        mapLink: 'https://goo.gl/maps/sgxAgR8Mnjr86Qt98',
-        cityLink: 'https://coloradosprings.gov/parks/page/palmer-park',
-    },
-    {
-        name: 'Garden of the Gods',
-        image: 'img/other-parks/garden-of-the-gods.jpg',
-        type: 'Unfenced',
-        distance: '6.9 miles',
-        time: '14 minutes',
-        mapLink: 'https://goo.gl/maps/Vj2851x6X2JSNeX76',
-        cityLink: 'https://coloradosprings.gov/parks/page/garden-gods',
-    },
-    {
-        name: 'Rampart Dog Park',
-        image: 'img/other-parks/rampart-dog-park.jpg',
-        type: 'Fenced',
-        distance: '6.6 miles',
-        time: '15 minutes',
-        mapLink: 'https://goo.gl/maps/UEAzoaFGxCTFi7Qo9',
-        cityLink: 'https://coloradosprings.gov/parks/page/rampart-park',
-    },
+  {
+    name: "Red Rock Canyon Open Space",
+    image: "img/other-parks/red-rock-canyon-open-space.jpg",
+    type: "Unfenced",
+    distance: "7.5 miles",
+    time: "15 minutes",
+    mapLink: "https://goo.gl/maps/qAKchVJRqyTYUc8v9",
+    cityLink: "https://coloradosprings.gov/parks/page/red-rock-canyon-open-space",
+  },
+  {
+    name: "Palmer Park",
+    image: "img/other-parks/palmer-park.jpg",
+    type: "Fenced",
+    distance: "9.8 miles",
+    time: "20 minutes",
+    mapLink: "https://goo.gl/maps/sgxAgR8Mnjr86Qt98",
+    cityLink: "https://coloradosprings.gov/parks/page/palmer-park",
+  },
+  {
+    name: "Garden of the Gods",
+    image: "img/other-parks/garden-of-the-gods.jpg",
+    type: "Unfenced",
+    distance: "6.9 miles",
+    time: "14 minutes",
+    mapLink: "https://goo.gl/maps/Vj2851x6X2JSNeX76",
+    cityLink: "https://coloradosprings.gov/parks/page/garden-gods",
+  },
+  {
+    name: "Rampart Dog Park",
+    image: "img/other-parks/rampart-dog-park.jpg",
+    type: "Fenced",
+    distance: "6.6 miles",
+    time: "15 minutes",
+    mapLink: "https://goo.gl/maps/UEAzoaFGxCTFi7Qo9",
+    cityLink: "https://coloradosprings.gov/parks/page/rampart-park",
+  },
 ];
 
 const reasons = [
-    "It's the law! <a class='text-green-600 underline' href='https://codelibrary.amlegal.com/codes/coloradospringsco/latest/coloradosprings_co/0-0-0-7038'>6.7.107</a>. The fine can be $50, $100 or $150 for a first, second and third offense respectively.",
-    'Ute Valley Park is visited by many people and not everyone is a dog person.',
-    'Not all dogs are friendly, even if your dog is.',
-    'Ute Valley Park is infamous for rattlesnakes.  Keep your dog and wildlife safe by keeping them leashed.',
+  "It's the law! <a class='text-green-600 underline' href='https://codelibrary.amlegal.com/codes/coloradospringsco/latest/coloradosprings_co/0-0-0-7038'>6.7.107</a>. The fine can be $50, $100 or $150 for a first, second and third offense respectively.",
+  "Ute Valley Park is visited by many people and not everyone is a dog person.",
+  "Not all dogs are friendly, even if your dog is.",
+  "Ute Valley Park is infamous for rattlesnakes.  Keep your dog and wildlife safe by keeping them leashed.",
 ];
 const rules = [
-    "Ute Valley Park is not an off-leash dog park. Please see the available off-leash dog parks in <a class='underline text-green-600' href='#off-leash'>Colorado Springs</a>.",
-    "Follow the  <a class='text-green-600 underline' href='https://coloradosprings.gov/parks/page/ute-valley-park'>Leave No Trace</a> principles",
-    'Always clean up and dispose of pet waste properly in a trashcan.',
-    'Please see other park rules for <a class="underline text-green-600" href="/rules/">Ute Valley Park</a>.',
+  "Ute Valley Park is not an off-leash dog park. Please see the available off-leash dog parks in <a class='underline text-green-600' href='#off-leash'>Colorado Springs</a>.",
+  "Follow the  <a class='text-green-600 underline' href='https://coloradosprings.gov/parks/page/ute-valley-park'>Leave No Trace</a> principles",
+  "Always clean up and dispose of pet waste properly in a trashcan.",
+  'Please see other park rules for <a class="underline text-green-600" href="/rules/">Ute Valley Park</a>.',
 ];
 
 const showDogs = ref(false);
 
 const randomize = function () {
-    for (let i = dogs.value.length - 1; i > 0; i--) {
-        const randomIndex = Math.floor(Math.random() * i);
-        const temp = dogs.value[i];
-        dogs.value[i] = dogs.value[randomIndex];
-        dogs.value[randomIndex] = temp;
-    }
+  for (let i = dogs.value.length - 1; i > 0; i--) {
+    const randomIndex = Math.floor(Math.random() * i);
+    const temp = dogs.value[i];
+    dogs.value[i] = dogs.value[randomIndex];
+    dogs.value[randomIndex] = temp;
+  }
 };
 
-const dogs = ref(['freyja_pup', 'the.sweet.life.of.five', 'logan.and.the.rescue.crew', 'marisslh', 'queen_padme_21']);
+const dogs = ref(["freyja_pup", "the.sweet.life.of.five", "logan.and.the.rescue.crew", "marisslh", "queen_padme_21"]);
 randomize();
 
 onMounted(() => {
-    showDogs.value = true;
+  showDogs.value = true;
 });
 </script>
-
-
 
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
-    transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .fade-enter-from,
 .fade-leave-to {
-    transform: translateX(10px);
-    opacity: 0;
+  transform: translateX(10px);
+  opacity: 0;
 }
 </style>

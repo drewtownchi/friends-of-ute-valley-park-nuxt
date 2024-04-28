@@ -1,30 +1,25 @@
 <template>
-  <ContentDoc v-slot="{doc}">
+  <ContentDoc v-slot="{ doc }">
     <div class="overflow-hidden bg-gray-50 py-16 lg:py-24">
       <div class="relative mx-auto max-w-xl px-4 sm:px-6 lg:max-w-screen-xl lg:px-8">
-        <svg class="absolute left-full hidden -translate-x-1/2 -translate-y-1/4 transform lg:block"
-             width="404"
-             height="784"
-             fill="none"
-             viewBox="0 0 404 784">
+        <svg
+          class="absolute left-full hidden -translate-x-1/2 -translate-y-1/4 transform lg:block"
+          width="404"
+          height="784"
+          fill="none"
+          viewBox="0 0 404 784">
           <defs>
-            <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7"
-                     x="0"
-                     y="0"
-                     width="20"
-                     height="20"
-                     patternUnits="userSpaceOnUse">
-              <rect x="0"
-                    y="0"
-                    width="4"
-                    height="4"
-                    class="text-gray-200"
-                    fill="currentColor" />
+            <pattern
+              id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7"
+              x="0"
+              y="0"
+              width="20"
+              height="20"
+              patternUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
             </pattern>
           </defs>
-          <rect width="404"
-                height="784"
-                fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
+          <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
         </svg>
 
         <div class="relative">
@@ -38,33 +33,32 @@
 
         <div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
           <div class="relative">
-            <h4 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-              Getting There
-            </h4>
+            <h4 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">Getting There</h4>
             <p class="mt-3 text-lg text-gray-500">
               {{ doc.location }}
             </p>
 
             <ul class="mt-10">
-              <li v-for="(amenity, i) in doc.amenities"
-                  :key="i"
-                  :class="{'mt-10': i !== 0}">
+              <li v-for="(amenity, i) in doc.amenities" :key="i" :class="{ 'mt-10': i !== 0 }">
                 <div class="flex">
                   <div class="flex-shrink-0">
                     <div class="flex h-12 w-12 items-center justify-center rounded-md bg-green-500 text-white">
-                      <svg class="h-6 w-6"
-                           fill="none"
-                           stroke="currentColor"
-                           viewBox="0 0 24 24"
-                           xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <svg
+                        class="h-6 w-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
                     </div>
                   </div>
@@ -82,85 +76,71 @@
           </div>
 
           <div class="relative -mx-4 mt-10 lg:mt-0">
-            <svg class="absolute left-1/2 -translate-x-1/2 translate-y-16 transform lg:hidden"
-                 width="784"
-                 height="404"
-                 fill="none"
-                 viewBox="0 0 784 404">
+            <svg
+              class="absolute left-1/2 -translate-x-1/2 translate-y-16 transform lg:hidden"
+              width="784"
+              height="404"
+              fill="none"
+              viewBox="0 0 784 404">
               <defs>
-                <pattern id="ca9667ae-9f92-4be7-abcb-9e3d727f2941"
-                         x="0"
-                         y="0"
-                         width="20"
-                         height="20"
-                         patternUnits="userSpaceOnUse">
-                  <rect x="0"
-                        y="0"
-                        width="4"
-                        height="4"
-                        class="text-gray-200"
-                        fill="currentColor" />
+                <pattern
+                  id="ca9667ae-9f92-4be7-abcb-9e3d727f2941"
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                  patternUnits="userSpaceOnUse">
+                  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
                 </pattern>
               </defs>
-              <rect width="784"
-                    height="404"
-                    fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
+              <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
             </svg>
             <div class="relative">
-              <a class="absolute right-6 top-1 mr-0 inline-flex items-center justify-center rounded-md border border-transparent bg-green-600 px-5 py-2 text-lg font-semibold text-green-50 hover:bg-green-500 focus:bg-green-500 sm:right-2 sm:mr-6 lg:mr-8"
-                 :href="doc.directionsLink">
+              <a
+                class="absolute right-6 top-1 mr-0 inline-flex items-center justify-center rounded-md border border-transparent bg-green-600 px-5 py-2 text-lg font-semibold text-green-50 hover:bg-green-500 focus:bg-green-500 sm:right-2 sm:mr-6 lg:mr-8"
+                :href="doc.directionsLink">
                 Get Directions
-                <svg class="ml-1 inline-block h-6 w-6"
-                     fill="none"
-                     stroke="currentColor"
-                     viewBox="0 0 24 24"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                <svg
+                  class="ml-1 inline-block h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
-              <NuxtPicture :img-attrs="{class: 'mx-auto'}"
-                           width="550"
-                           :src="doc.map"
-                           alt="" />
+              <NuxtPicture :img-attrs="{ class: 'mx-auto' }" width="550" :src="doc.map" alt="" />
             </div>
           </div>
         </div>
 
-        <svg class="absolute right-full hidden translate-x-1/2 translate-y-12 transform lg:block"
-             width="404"
-             height="784"
-             fill="none"
-             viewBox="0 0 404 784">
+        <svg
+          class="absolute right-full hidden translate-x-1/2 translate-y-12 transform lg:block"
+          width="404"
+          height="784"
+          fill="none"
+          viewBox="0 0 404 784">
           <defs>
-            <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
-                     x="0"
-                     y="0"
-                     width="20"
-                     height="20"
-                     patternUnits="userSpaceOnUse">
-              <rect x="0"
-                    y="0"
-                    width="4"
-                    height="4"
-                    class="text-gray-200"
-                    fill="currentColor" />
+            <pattern
+              id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
+              x="0"
+              y="0"
+              width="20"
+              height="20"
+              patternUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
             </pattern>
           </defs>
-          <rect width="404"
-                height="784"
-                fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
+          <rect width="404" height="784" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
         </svg>
         <div class="relative mt-12 sm:mt-16 lg:mt-24">
           <div class="flex flex-wrap">
-            <div v-for="photo in doc.photos"
-                 :key="photo.caption"
-                 class="w-full p-4 lg:w-1/2">
-              <NuxtPicture :img-attrs="{class: 'relative mx-auto'}"
-                           :src="photo.photo"
-                           alt="" />
+            <div v-for="photo in doc.photos" :key="photo.caption" class="w-full p-4 lg:w-1/2">
+              <NuxtPicture :img-attrs="{ class: 'relative mx-auto' }" :src="photo.photo" alt="" />
               <p class="text-center text-gray-500">
                 {{ photo.caption }}
               </p>
