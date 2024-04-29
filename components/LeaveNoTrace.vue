@@ -17,7 +17,7 @@
             <div class="mx-auto w-64 rounded-md bg-white p-8 shadow focus-within:ring-2 focus-within:ring-green-100">
               <a href="https://www.lnt.org">
                 <NuxtPicture
-                  class="h-auto w-64"
+                  :img-attrs="{ class: 'h-auto w-64' }"
                   src="/img/logos/leave-no-trace.jpg"
                   alt="Leave No Trace logo"
                   width="192"
@@ -34,10 +34,10 @@
                 <div class="aspect-h-2 aspect-w-3">
                   <NuxtPicture
                     :src="principle.image"
-                    width="360"
-                    height="240"
-                    sizes="180 md:360"
-                    class="rounded-lg object-cover shadow-lg"
+                    width="450"
+                    height="300"
+                    sizes="225 md:450"
+                    :img-attrs="{ class: 'rounded-lg object-cover shadow-lg' }"
                     :alt="principle.altText"
                     loading="lazy" />
                 </div>
