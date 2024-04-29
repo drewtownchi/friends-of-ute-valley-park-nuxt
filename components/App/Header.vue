@@ -1,5 +1,5 @@
 <template>
-  <NuxtLazyHydrate :on-interaction="['click', 'touchstart']">
+  <NuxtLazyHydrate when-idle>
     <HeadlessDisclosure v-slot="{ open }" as="nav" class="bg-white shadow">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 justify-between">
