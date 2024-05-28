@@ -185,12 +185,12 @@
               :img-attrs="{
                 class: 'absolute left-0 top-0 w-[47rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10',
               }"
-              src="img/cta/home-page-cta.jpg"
+              src="img/volunteer/volunteer-5.jpg"
               sizes="xs:300px md:500px lg:800"
               quality="60"
               alt="Volunteers working on a fence"
               width="900"
-              height="540" />
+              height="600" />
           </div>
         </div>
       </div>

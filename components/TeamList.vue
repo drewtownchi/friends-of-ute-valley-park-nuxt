@@ -13,15 +13,7 @@
           class="mx-auto grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-4 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12">
           <li v-for="teamMember in teamMembers" :key="teamMember.name">
             <div class="space-y-4">
-              <UAvatar
-                :as="NuxtImg"
-                :src="teamMember.image"
-                size="3xl"
-                width="80px"
-                height="80px"
-                format="webp"
-                sizes="50px md:100px"
-                :alt="teamMember.name" />
+              <UiAvatar :src="teamMember.image" :alt="teamMember.name" />
               <div class="space-y-2">
                 <div class="text-xs font-medium leading-4 lg:text-sm lg:leading-5">
                   <h4>{{ teamMember.name }}</h4>

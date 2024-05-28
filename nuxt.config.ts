@@ -1,32 +1,31 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   site: {
-    name: 'Friends Of Ute Valley Park',
-    url: 'https://friendsofutevalleypark.com'
+    name: "Friends Of Ute Valley Park",
+    url: "https://friendsofutevalleypark.com",
   },
   devtools: { enabled: true },
   modules: [
-    '@nuxt/eslint',
-    '@nuxt/ui',
-    'nuxt-headlessui',
-    '@vueuse/nuxt',
-    '@nuxt/content',
+    "@nuxt/eslint",
+    "radix-vue/nuxt",
+    "nuxt-headlessui",
+    "@vueuse/nuxt",
+    "@nuxt/content",
     "@nuxt/image",
     "@nuxtjs/sitemap",
-    "nuxt-lazy-hydrate",
+    "@unocss/nuxt",
+    "nuxt-icon",
   ],
   image: {
-    format: ['avif', 'webp'],
+    format: ["avif", "webp"],
   },
   experimental: {
     defaults: {
       nuxtLink: {
-        trailingSlash: 'append'
-      }
+        trailingSlash: "append",
+      },
     },
     componentIslands: true,
   },
-  colorMode: {
-    preference: 'light'
-  },
-})
+  css: ["@unocss/reset/tailwind.css"],
+});

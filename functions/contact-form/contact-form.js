@@ -1,51 +1,47 @@
-import { parse } from 'querystring';
-import { GoogleSpreadsheet } from 'google-spreadsheet';
-import { JWT } from 'google-auth-library';
-require('dotenv').config();
+import { parse } from "querystring";
+import { GoogleSpreadsheet } from "google-spreadsheet";
+import { JWT } from "google-auth-library";
+require("dotenv").config();
 
-export async function handler(event) {
-  const data = event.body ? JSON.parse(event.body) : {};
-
-  const errors = [];
+export async function handler(event, context, callback) {
+  const data = generateRequestData(event.body);
+  // eslint-disable-next-line no-console
+  console.log(data);
   if (!data.email) {
-    errors.push({
-      message: "Email required",
-      path: "email",
-    });
-  }
-
-  if (!data.name) {
-    errors.push({
-      message: "Name required",
-      path: "name",
-    });
-  }
-  if (!data.category) {
-    errors.push({
-      message: "Category required",
-      path: "category",
-    });
-  }
-  if (!data.message) {
-    errors.push({
-      message: "Message required",
-      path: "message",
-    });
-  }
-  if (errors.length > 0) {
     return {
-      statusCode: 422,
+      statusCode: 400,
       body: JSON.stringify({
-        errors,
+        status: false,
+        message: "Email address required",
       }),
     };
   }
 
-  const SCOPES = ['https://www.googleapis.com/auth/spreadsheets'];
+  if (!data.name) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({
+        status: false,
+        message: "Name required",
+      }),
+    };
+  }
+
+  if (!data.message) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({
+        status: false,
+        message: "Message required",
+      }),
+    };
+  }
+
+  const SCOPES = ["https://www.googleapis.com/auth/spreadsheets"];
 
   const jwtFromEnv = new JWT({
     email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-    key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+    key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n"),
     scopes: SCOPES,
   });
 
@@ -57,7 +53,7 @@ export async function handler(event) {
   const sheet = doc.sheetsByIndex[0];
 
   await sheet.addRow({
-    Date: new Intl.DateTimeFormat('en-US').format(new Date()),
+    Date: new Intl.DateTimeFormat("en-US").format(new Date()),
     Name: data.name,
     Email: data.email,
     Category: data.category,
@@ -68,5 +64,21 @@ export async function handler(event) {
   return {
     statusCode: 200,
     body: JSON.stringify({ status: true }),
+  };
+}
+
+function generateRequestData(eventBody) {
+  let body = {};
+  try {
+    body = JSON.parse(eventBody);
+  } catch (e) {
+    body = parse(eventBody);
+  }
+
+  return {
+    email: body.payload.email,
+    name: body.payload.name,
+    category: body.payload.category,
+    message: body.payload.message,
   };
 }
